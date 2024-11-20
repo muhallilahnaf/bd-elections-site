@@ -1,31 +1,21 @@
 <script>
-	// let {
-	// 	heading = 'BD Elections',
-	// 	subheading = 'Data and analysis of Bangladesh General Elections',
-	// 	href = '/',
-	// 	img_src = '/favicon.png',
-	// 	img_alt = 'favicon'
-	// } = $props();
-    import menuData from '$lib/data/menu.json'
-    let cardCount = (menuData.length == 3) ? 'three' : 'two'
+	import menuData from '$lib/data/menu.json';
+	let cardCount = menuData.length == 3 ? 'three' : 'two';
 </script>
 
+<!-- homepage cards -->
 <div class="ui container">
-
-
-
-<div class="ui {cardCount} stackable cards">
-    {#each menuData as menu}
-        <a class="ui card" href={menu.href}>
-            <img class="image" src={menu.img_src} alt={menu.img_alt} />
-            <div class="content">
-                <h2 class="header">{menu.title}</h2>
-                <div class="meta">
-                    <p>{menu.subtitle}</p>
-                </div>
-            </div>
-        </a>
-    {/each}
-</div>
-
+	<div class="ui {cardCount} stackable cards">
+		{#each menuData as menu}
+			<a class="ui card" href={menu.href}>
+				<img class="image" src={menu.img_src} alt={menu.img_alt} />
+				<div class="content">
+					<h2 class="header">{menu.title}</h2>
+					<div class="meta">
+						<p>{menu.subtitle}</p>
+					</div>
+				</div>
+			</a>
+		{/each}
+	</div>
 </div>

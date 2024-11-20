@@ -1,7 +1,5 @@
 <script>
     import menuData from '$lib/data/menu.json'
-    
-    
 </script>
 
 <!-- brand icon -->
