@@ -1,5 +1,4 @@
 <script>
-	import Navbar from '$lib/components/Navbar.svelte';
 	import PageHeading from '$lib/components/PageHeading.svelte';
 	import Cards from '$lib/components/Cards.svelte';
 	import DataSegment from '$lib/components/DataSegment.svelte';
@@ -15,19 +14,18 @@
 	let { data } = $props();
 </script>
 
-<Navbar />
+
 <PageHeading {heading} {subheading} />
 
 <!-- data files and preview -->
-<div class="ui container">
-	{#each data.results as filedata}
-		<DataSegment {filedata} />
-	{/each}
-</div>
+{#each data.results as filedata}
+	<DataSegment {filedata} />
+{/each}
+
 
 <!-- data source -->
 <div class="ui container">
-	<div class="ui compact segment">
+	<div class="ui grey segment">
 		<p><span class="ui large text">Data Source</span></p>
 		<p>
 			Wikipedia. Pages under <a href="https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Jatiya_Sangsad">link</a> 

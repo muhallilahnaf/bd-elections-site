@@ -1,0 +1,68 @@
+[
+    {
+        "name": "allp_win_change",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "bigp_votepc_turnout",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "jjp_stronghold",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "mainp_cc_trend",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "mainp_region_win",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "mainp_win_diff",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "mainp_win_swing",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "not_mainp_wins",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "turnout_pc_med_std",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "vote_diff_med",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    },
+    {
+        "name": "voters_map",
+        "title": "",
+        "description": "",
+        "img_src": ""
+    }
+]

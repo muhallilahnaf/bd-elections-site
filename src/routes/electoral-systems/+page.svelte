@@ -1,10 +1,9 @@
 <script>
-    import Navbar from '$lib/components/Navbar.svelte'
     import PageHeading from '$lib/components/PageHeading.svelte'
     import Cards from '$lib/components/Cards.svelte'
 </script>
 
-<Navbar/>
+
 <PageHeading/>
 <Cards/>
 

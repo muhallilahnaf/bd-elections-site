@@ -1,12 +1,16 @@
 <script>
-    import Navbar from '$lib/components/Navbar.svelte'
     import PageHeading from '$lib/components/PageHeading.svelte'
     import Cards from '$lib/components/Cards.svelte'
+    import analysisItems from '$lib/data/analysisItems.json'
 </script>
 
-<Navbar/>
 <PageHeading/>
-<Cards/>
+
+<div class="ui list">
+    {#each analysisItems as item}
+        <div class="item">{item.name}</div>
+    {/each}
+  </div>
 
 
 
