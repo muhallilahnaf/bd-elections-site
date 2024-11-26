@@ -15,7 +15,7 @@
     </div>
     <!-- file download btn -->
     <div class="ui fitted compact basic segment">
-        <a href={filedata.download_url} download={filedata.name}>
+        <a href={filedata.download_url} download={filedata.name} target="_blank">
             <button class="tiny ui compact labeled icon primary button">
                 <i class="arrow down icon"></i>
                 Download

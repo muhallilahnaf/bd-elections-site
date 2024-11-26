@@ -1,27 +1,16 @@
 <script>
-    import PageHeading from '$lib/components/PageHeading.svelte'
-    import Cards from '$lib/components/Cards.svelte'
-    import analysisItems from '$lib/data/analysisItems.json'
+    import AnalysisCards from '$lib/components/AnalysisCards.svelte';
+    import PageHeading from '$lib/components/PageHeading.svelte';
+	import menuData from '$lib/data/menu.json';
+
+	// get heading, subheading for analysis page
+	const path = '/analysis';
+	const dataItem = menuData.find((item) => item.href == path);
+	const heading = dataItem.title;
+	const subheading = dataItem.subtitle;
 </script>
 
-<PageHeading/>
 
-<div class="ui list">
-    {#each analysisItems as item}
-        <div class="item">{item.name}</div>
-    {/each}
-  </div>
+<PageHeading {heading} {subheading} />
 
-
-
-
-<!-- <div class="ui segment">
-    <iframe src="/swing_map.html" title="W3Schools Free Online Web Tutorials"></iframe>
-</div> -->
-
-<!-- <style>
-    iframe {
-        width: 80vw;
-        height: 400px;
-    }
-</style> -->
+<AnalysisCards />
