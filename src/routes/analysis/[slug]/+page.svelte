@@ -1,5 +1,5 @@
 <script>
-    	import BackButton from '$lib/components/BackButton.svelte';
+    import BackButton from '$lib/components/BackButton.svelte';
 	import AnalysisDataSection from '$lib/components/AnalysisDataSection.svelte';
 	import AnalysisFigureSection from '$lib/components/AnalysisFigureSection.svelte';
 	import AnalysisMapSection from '$lib/components/AnalysisMapSection.svelte';

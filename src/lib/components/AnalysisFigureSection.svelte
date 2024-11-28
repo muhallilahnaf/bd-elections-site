@@ -9,18 +9,13 @@
 			<img src={section.file_name} alt={section.file_name} class="ui image" />
 		</div>
 		<p class="description">
-			{section.description.slice(0, section.description.indexOf('*'))}
+			{section.description}
 		</p>
 		<div class="ui icon info message">
 			<i class="info icon"></i>
 			<div class="content">
 				<div class="header">Insight</div>
-				<p>
-					{section.description.slice(
-						section.description.indexOf('*') + 1,
-						section.description.lastIndexOf('*')
-					)}
-				</p>
+				<p>{section.discussion}</p>
 			</div>
 		</div>
 	</div>

@@ -13,7 +13,8 @@
             {
                 "type": "figure",
                 "file_name": "mainp_win_diff.png",
-                "description": "Highlighting the win count of AL and BNP in each seat. Seats with darker shades have more AL wins. Seats with lighter shades have more BNP wins. *This visualizes which regions are pro-BNP and pro-AL.*"
+                "description": "Highlighting the win count of AL and BNP in each seat. Seats with darker shades have more AL wins. Seats with lighter shades have more BNP wins.",
+                "discussion": "This visualizes which regions are pro-BNP and pro-AL."
             },
             {
                 "type": "map",
@@ -36,7 +37,8 @@
             {
                 "type": "figure",
                 "file_name": "mainp_win_swing.png",
-                "description": "Highlighting the frequency of swing seats. Since 4 elections are considered, maximum 3 swings are possible. *Urban regions like Dhaka, Comilla, Barishal, Bogura, Mymensingh, Sylhet have more influence on deciding which party is winning the election. Rural regions have less swing and predictable outcome.*"
+                "description": "Highlighting the frequency of swing seats. Since 4 elections are considered, maximum 3 swings are possible.",
+                "discussion": "Urban regions like Dhaka, Comilla, Barishal, Bogura, Mymensingh, Sylhet have more influence on deciding which party is winning the election. Rural regions have less swing and predictable outcome."
             },
             {
                 "type": "map",
@@ -59,12 +61,14 @@
             {
                 "type": "figure",
                 "file_name": "bigp_votepc_turnout.png",
-                "description": "Stacked area plot showing the % of votes each party has received out of total voters in each of the 4 elections. The top 'turnout_pc' line denotes the % of valid votes casted out of total voters (aka turnout %). *AL was able to steadily grow their % of votes, while BNP kept their % steady.*"
+                "description": "Stacked area plot showing the % of votes each party has received out of total voters in each of the 4 elections. The top 'turnout_pc' line denotes the % of valid votes casted out of total voters (aka turnout %).",
+                "discussion": "AL was able to steadily grow their % of votes, while BNP kept their % steady."
             },
             {
                 "type": "figure",
                 "file_name": "bigp_votepc_turnout_sum.png",
-                "description": "Pie chart showing the % of votes each party has received out of the total votes casted in 1991-2008 elections. *AL has received 44% of all votes casted in the 4 elections, while BNP has received 38% of it.*"
+                "description": "Pie chart showing the % of votes each party has received out of the total votes casted in 1991-2008 elections.",
+                "discussion": "AL has received 44% of all votes casted in the 4 elections, while BNP has received 38% of it."
             }
         ]
     },
@@ -82,12 +86,14 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_med_hist.png",
-                "description": "Histogram showing the median turnout % of 300 seats in 4 elections. *It is evident that most seats have a median turnout of 70-75%.*"
+                "description": "Histogram showing the median turnout % of 300 seats in 4 elections.",
+                "discussion": "It is evident that most seats have a median turnout of 70-75%."
             },
             {
                 "type": "figure",
                 "file_name": "turnout_pc_med_map.png",
-                "description": "Highlighting the median turnout % of each of the 300 seats. *As we move from west to east of BD, voters are less interested in showing up on the polls.*"
+                "description": "Highlighting the median turnout % of each of the 300 seats.",
+                "discussion": "As we move from west to east of BD, voters are less interested in showing up on the polls."
             },
             {
                 "type": "data",
@@ -97,7 +103,8 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_med_div_map.png",
-                "description": "Highlighting the median turnout % of each division. *Khulna and Rajshahi divisions have the highest average turnout, followed by Rangpur and Dhaka. Barishal division has the lowest average turnout.*"
+                "description": "Highlighting the median turnout % of each division.",
+                "discussion": "Khulna and Rajshahi divisions have the highest average turnout, followed by Rangpur and Dhaka. Barishal division has the lowest average turnout."
             },
             {
                 "type": "data",
@@ -107,12 +114,14 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_std_hist.png",
-                "description": "Histogram showing the standard deviation of turnout % of 300 seats in 4 elections. *It is evident that most seats have a turnout with a standard deviation of 12.5-15.*"
+                "description": "Histogram showing the standard deviation of turnout % of 300 seats in 4 elections.",
+                "discussion": "It is evident that most seats have a turnout with a standard deviation of 12.5-15."
             },
             {
                 "type": "figure",
                 "file_name": "turnout_pc_std_map.png",
-                "description": "Highlighting the standard deviation of turnout % of each of the 300 seats. *Seats in the Comilla, Barishal, Chittagong, Mymensingh region have more variance in turnout.*"
+                "description": "Highlighting the standard deviation of turnout % of each of the 300 seats.",
+                "discussion": "Seats in the Comilla, Barishal, Chittagong, Mymensingh region have more variance in turnout."
             },
             {
                 "type": "data",
@@ -122,7 +131,8 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_std_div_map.png",
-                "description": "Highlighting the standard deviation of turnout % of each division. *Khulna and Rajshahi divisions have the lowest variance in turnout, followed by Rangpur and Dhaka. Turnout varies the highest in Barishal division.*"
+                "description": "Highlighting the standard deviation of turnout % of each division.",
+                "discussion": "Khulna and Rajshahi divisions have the lowest variance in turnout, followed by Rangpur and Dhaka. Turnout varies the highest in Barishal division."
             }
         ]
     },
@@ -140,7 +150,8 @@
             {
                 "type": "figure",
                 "file_name": "not_mainp_wins.png",
-                "description": "Map visualizing the seats where parties other than AL/BNP have won. *Rangpur, Khulna, Sylhet and Chittagong regions have some strongholds by smaller parties.*"
+                "description": "Map visualizing the seats where parties other than AL/BNP have won.",
+                "discussion": "Rangpur, Khulna, Sylhet and Chittagong regions have some strongholds by smaller parties."
             },
             {
                 "type": "map",
@@ -163,7 +174,8 @@
             {
                 "type": "figure",
                 "file_name": "jjp_stronghold.png",
-                "description": "Map visualizing the seats where Jatiyo Party and Jamaat have won. *Rangpur has JaPa dominance and Khulna region has some strongholds by both JaPa and Jamaat.*"
+                "description": "Map visualizing the seats where Jatiyo Party and Jamaat have won.",
+                "discussion": "Rangpur has JaPa dominance and Khulna region has some strongholds by both JaPa and Jamaat."
             },
             {
                 "type": "map",
@@ -186,17 +198,20 @@
             {
                 "type": "figure",
                 "file_name": "mainp_region_count.png",
-                "description": "Bar chart visualizing the number of seats in urban and rural areas. *72% seats are in the rural areas and 28% seats are in the urban areas.*"
+                "description": "Bar chart visualizing the number of seats in urban and rural areas.",
+                "discussion": "72% seats are in the rural areas and 28% seats are in the urban areas."
             },
             {
                 "type": "figure",
                 "file_name": "mainp_region_win.png",
-                "description": "Bar chart visualizing the number of seats won by AL and BNP in urban and rural areas. *Election win is largely determined by the rural seats as these are in majority. Though the win difference between both parties in rural seats were low in the first two elections, the election winning party won most of the rural seats in the last two elections. BNP seems to be doing a better job in the urban seats.*"
+                "description": "Bar chart visualizing the number of seats won by AL and BNP in urban and rural areas.",
+                "discussion": "Election win is largely determined by the rural seats as these are in majority. Though the win difference between both parties in rural seats were low in the first two elections, the election winning party won most of the rural seats in the last two elections. BNP seems to be doing a better job in the urban seats."
             },
             {
                 "type": "figure",
                 "file_name": "mainp_region_win_avg.png",
-                "description": "Bar chart visualizing the average number of seats won by AL and BNP in urban and rural areas. *AL performs well in rural areas where BNP has more wins in urban areas on average.*"
+                "description": "Bar chart visualizing the average number of seats won by AL and BNP in urban and rural areas.",
+                "discussion": "AL performs well in rural areas where BNP has more wins in urban areas on average."
             }
         ]
     },
@@ -214,7 +229,8 @@
             {
                 "type": "figure",
                 "file_name": "allp_win_change.png",
-                "description": "Map visualizing the frequency of winner party changes in each seat. Winner party changes more frequently in the seats with darker shades and vice versa. *Winner party doesn't change in Noakhali, Bogura, and Gopalganj regions.*"
+                "description": "Map visualizing the frequency of winner party changes in each seat. Winner party changes more frequently in the seats with darker shades and vice versa.",
+                "discussion": "Winner party doesn't change in Noakhali, Bogura, and Gopalganj regions."
             },
             {
                 "type": "map",
@@ -232,7 +248,8 @@
             {
                 "type": "figure",
                 "file_name": "vote_diff_med_distn.png",
-                "description": "Histogram showing the distribution of median vote difference of each of the 300 seats. *Most seats have a median vote difference <20%, indicating that most seats have close contest between the top 2 candidates.*"
+                "description": "Histogram showing the distribution of median vote difference of each of the 300 seats.",
+                "discussion": "Most seats have a median vote difference <20%, indicating that most seats have close contest between the top 2 candidates."
             },
             {
                 "type": "data",
@@ -242,7 +259,8 @@
             {
                 "type": "figure",
                 "file_name": "allp_close_contest.png",
-                "description": "Map visualizing the seats that have a close contest (average vote difference <20%). Seats with lighter shade have closer contest on avarage than seats with a darker shade. *Most seats have an average vote difference of less than 10% and go through a close battle.*"
+                "description": "Map visualizing the seats that have a close contest (average vote difference <20%). Seats with lighter shade have closer contest on avarage than seats with a darker shade.",
+                "discussion": "Most seats have an average vote difference of less than 10% and go through a close battle."
             },
             {
                 "type": "data",
@@ -252,7 +270,8 @@
             {
                 "type": "figure",
                 "file_name": "allp_landslide_victory.png",
-                "description": "Map visualizing the seats that have a landslide victory i.e. winners winning by a huge margin (>40% vote difference). *Seats around Gopalganj and some seats in the north-east have landslide victory.*"
+                "description": "Map visualizing the seats that have a landslide victory i.e. winners winning by a huge margin (>40% vote difference).",
+                "discussion": "Seats around Gopalganj and some seats in the north-east have landslide victory."
             }
         ]
     },
@@ -270,7 +289,8 @@
             {
                 "type": "figure",
                 "file_name": "bigp_cc_win_pc.png",
-                "description": "Pie chart showing the % of seats big parties have won through a close contest (vote difference % <10%). *AL has won majority of the close contests, closely followed by BNP.*"
+                "description": "Pie chart showing the % of seats big parties have won through a close contest (vote difference % <10%).",
+                "discussion": "AL has won majority of the close contests, closely followed by BNP."
             },
             {
                 "type": "data",
@@ -280,12 +300,14 @@
             {
                 "type": "figure",
                 "file_name": "bigp_cc_lose_pc.png",
-                "description": "Pie chart showing the % of seats big parties have lost through a close contest (vote difference % <10%). *AL has lost almost half of the close battles, whereas BNP has lost quite fewer close battles than AL.*"
+                "description": "Pie chart showing the % of seats big parties have lost through a close contest (vote difference % <10%).",
+                "discussion": "AL has lost almost half of the close battles, whereas BNP has lost quite fewer close battles than AL."
             },
             {
                 "type": "figure",
                 "file_name": "vdiff_dist.png",
-                "description": "Distribution of the vote difference % for each year shows that as years went by, election results became more polarised. *The median vote difference % increased gradually, indicating that most of the winner candidates have won by a bigger margin than that of the previous year. 2008 election had quite a lot outliers than any other previous elections.*"
+                "description": "Distribution of the vote difference % for each year shows that as years went by, election results became more polarised.",
+                "discussion": "The median vote difference % increased gradually, indicating that most of the winner candidates have won by a bigger margin than that of the previous year. 2008 election had quite a lot outliers than any other previous elections."
             }
         ]
     },
@@ -298,12 +320,14 @@
             {
                 "type": "figure",
                 "file_name": "voters_distn.png",
-                "description": "Histogram of the registered voters for the year 2008. *Most seats have 2-3 lacs of registered voters.*"
+                "description": "Histogram of the registered voters for the year 2008.",
+                "discussion": "Most seats have 2-3 lacs of registered voters."
             },
             {
                 "type": "figure",
                 "file_name": "voters_map.png",
-                "description": "Map visualizing the spread of voters across the country. *Most seats have an even distribution of voters except the urban regions of Dhaka, Chittagong, and Sylhet.*"
+                "description": "Map visualizing the spread of voters across the country.",
+                "discussion": "Most seats have an even distribution of voters except the urban regions of Dhaka, Chittagong, and Sylhet."
             },
             {
                 "type": "map",
