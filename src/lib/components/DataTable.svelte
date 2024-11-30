@@ -5,7 +5,7 @@
 </script>
 
 <!-- data table -->
- <div class="table-wrapper">
+<div class="table-wrapper">
     <table class="ui very compact small unstackable table">
         <thead>
             <tr>

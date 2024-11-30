@@ -1,5 +1,5 @@
 <script>
-    import menuData from '$lib/data/menu.json'
+    import menuData from '$lib/data/menuData.json'
 </script>
 
 

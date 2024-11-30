@@ -21,7 +21,7 @@ const fetchJSON = async (url) => {
 
 
 // fetch github data folder and its contents
-export const loads = async () => {
+export const load = async () => {
 
 	try {    
 		// fetch github data folder

@@ -1,5 +1,5 @@
 <script>
-	import menuData from '$lib/data/menu.json';
+	import menuData from '$lib/data/menuData.json';
 	let cardCount = menuData.length == 3 ? 'three' : 'two';
 </script>
 

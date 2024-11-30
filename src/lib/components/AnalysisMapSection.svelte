@@ -1,10 +1,10 @@
 <script>
-	let { section } = $props();
+	let { section, folder } = $props();
 </script>
 
-<!-- map section -->
+<!-- /analysis map section -->
 <p>{section.description}</p>
-<iframe src={'/' + section.file_name} title={section.file_name}></iframe>
+<iframe src={`${folder}${section.file_name}`} title={section.file_name}></iframe>
 
 <style>
 	iframe {

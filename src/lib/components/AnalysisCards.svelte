@@ -8,8 +8,8 @@
     <div class="ui basic segment">
         <div class="ui four stackable cards">
             {#each analysisData as item}
-                <a class="ui card" href={'/analysis/' + item.name}>
-                    <img class="image" src={item.thumb} alt={item.title} />
+                <a class="ui card" href={'/analysis/' + item.slug}>
+                    <img class="image" src={`${item.figure_folder_url}${item.thumb}`} alt={item.thumb} />
                     <div class="content">
                         <h2 class="header">{item.title}</h2>
                         <div class="meta">

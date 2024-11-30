@@ -2,11 +2,14 @@
 	import NavItems from '$lib/components/NavItems.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 	import { onMount } from 'svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	onMount(() => {
 		window.$('.ui.dropdown').dropdown({ action: 'select' });
 	});
 </script>
+
+<!-- ROOT LAYOUT -->
 
 <div class="ui grid">
 	<!-- for desktop -->
@@ -51,6 +54,8 @@
 </div>
 
 <slot />
+
+<Footer/>
 
 <style>
 	.computer.only .column {

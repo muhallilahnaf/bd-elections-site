@@ -1,12 +1,12 @@
 <script>
-	let { section } = $props();
+	let { section, folder } = $props();
 </script>
 
-<!-- analysis section -->
+<!-- /analysis figure section -->
 <div class="ui stackable grid">
 	<div class="eight wide column">
 		<div class="ui compact basic segment">
-			<img src={section.file_name} alt={section.file_name} class="ui image" />
+			<img src={`${folder}${section.file_name}`} alt={section.file_name} class="ui image" />
 		</div>
 		<p class="description">
 			{section.description}

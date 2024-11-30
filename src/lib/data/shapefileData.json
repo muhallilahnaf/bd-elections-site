@@ -1,0 +1,7 @@
+{
+    "name": "seats.shp",
+    "html_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/map",
+    "description": "Shapefile (.shp) consisting of the shape of 300 constituencies of Bangladesh. Can be used to visualize the BD parliament constituencies in a map (e.g. Google Map) using GIS tools or code (e.g. Python GeoPandas library).",
+    "attribution_link": "https://www.arcgis.com/home/item.html?id=614d7872c0804803af4038bb4ea6820b",
+    "columns": ["seat_no", "seat", "district", "division", "region", "shape_len", "shape_area", "geometry"]
+}

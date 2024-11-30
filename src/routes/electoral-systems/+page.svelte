@@ -1,12 +1,12 @@
 <script>
 	import PageHeading from '$lib/components/PageHeading.svelte';
-	import menuData from '$lib/data/menu.json';
-    import { onMount } from 'svelte';
+	import menuData from '$lib/data/menuData.json';
+	import { onMount } from 'svelte';
 
-    onMount(() => {
-        window.$('.menu .item').tab();
-    });
-    
+	onMount(() => {
+		window.$('.menu .item').tab();
+	});
+
 	// get heading, subheading for analysis page
 	const path = '/electoral-systems';
 	const dataItem = menuData.find((item) => item.href == path);
@@ -54,44 +54,67 @@
 
 <!-- electoral systems analysis -->
 <div class="ui container">
+	<!-- year tabs -->
+	<div class="ui top attached tabular menu">
+		{#each data.years.entries() as [i, year]}
+			<div class="item" class:active={i == 0} data-tab={year.toString()}>{year}</div>
+			<!-- <div class={(i == 0) ? "active item" : "item"} data-tab={year.toString()}>{year}</div> -->
+		{/each}
+	</div>
 
-    <!-- year tabs -->
-    <div class="ui top attached tabular menu">
-        {#each data.years.entries() as [i, year]}
-            <div class="item" class:active={i == 0} data-tab={year.toString()}>{year}</div>
-            <!-- <div class={(i == 0) ? "active item" : "item"} data-tab={year.toString()}>{year}</div> -->
-        {/each}
-    </div>
+	<!-- tab bodies -->
+	{#each data.years.entries() as [i, year]}
+		<div class="ui bottom attached tab segment" class:active={i == 0} data-tab={year.toString()}>
+			<!-- data download -->
+			<div class="ui basic padded segment">
+				<a
+					href={`https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/${data.data_file_name}${year}.csv`}
+					download={`${data.data_file_name}${year}.csv`}
+					target="_blank"
+				>
+					<button class="tiny ui compact labeled icon primary button">
+						<i class="arrow down icon"></i>
+						<span> Download full analysis result (.csv)</span>
+					</button>
+				</a>
+			</div>
+			<!-- analysis sections -->
+			{#each data.sections as section}
+				<div class="ui basic padded segment">
+					<!-- analysis title, description -->
+					<div class="ui basic segment">
+						<h2 class="ui header">{section.title}</h2>
+						<p>{section.description}</p>
+					</div>
 
-    <!-- tab bodies -->
-    {#each data.years.entries() as [i, year]}
-        <div class="ui bottom attached tab segment" class:active={i == 0} data-tab={year.toString()}>
-            
-            <!-- analysis sections -->
-            {#each data.sections as section}
-                
-                <!-- analysis title, description -->
-                <div class="ui basic segment">
-                    <h2 class="ui header">{section.title}</h2>
-                    <p>{section.description}</p>
-                </div>
-
-                <!-- analysis figure, discussion -->
-                <div class="ui stackable grid">
-                    <div class="eight wide column">
-                        <div class="ui compact basic segment">
-                            <img src={section.file_name + year} alt={section.title} class="ui image" />
-                        </div>
-                        <div class="ui icon info message">
-                            <i class="info icon"></i>
-                            <div class="content">
-                                <div class="header">Insight</div>
-                                <p>{section.discussion}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {/each}
-        </div>
-    {/each}
+					<!-- analysis figure, discussion -->
+					<div class="ui stackable grid">
+						<div class="eight wide column">
+							<div class="ui compact basic segment">
+								<img src={section.file_name + year} alt={section.title} class="ui image" />
+							</div>
+						</div>
+						<div class="ui compact basic segment">
+							<div class="ui icon info message">
+								<i class="info icon"></i>
+								<div class="content">
+									<div class="header">Insight</div>
+									{#each section.discussion as disc}
+										<p>{disc}</p>
+									{/each}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{/each}
+		</div>
+	{/each}
 </div>
+
+
+<style>
+	.tabular .item {
+		cursor: pointer;
+	}
+</style>

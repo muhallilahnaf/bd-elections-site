@@ -1,13 +1,13 @@
 <script>
-	let { section, name } = $props();
+	let { section, nblink, folder } = $props();
 </script>
 
-<!-- data section -->
-<div class="btn">
-	<!-- <DataTable data={filedata.data} /> -->
+<!-- /analysis data section -->
+<div class="btn-container">
+	<!-- data download btn -->
 	<div>
 		<a
-			href={`https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/${section.file_name}`}
+			href={`${folder}${section.file_name}`}
 			download={section.file_name}
 			target="_blank"
 		>
@@ -17,10 +17,10 @@
 			</button>
 		</a>
 	</div>
-	<!-- <DataTable data={filedata.data} /> -->
+	<!-- notebook link -->
 	<div>
 		<a
-			href={`https://github.com/muhallilahnaf/bd-elections-eda/blob/master/${name}.ipynb`}
+			href={nblink}
 			target="_blank"
 		>
 			<button class="tiny ui compact labeled icon primary button">
@@ -32,12 +32,12 @@
 </div>
 
 <style>
-	.btn {
+	.btn-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	.btn > :first-child {
+	.btn-container > :first-child {
 		margin-right: 3rem;
 		margin-bottom: 2rem;
 	}

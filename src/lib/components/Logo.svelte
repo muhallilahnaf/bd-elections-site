@@ -1,4 +1,4 @@
 <a class="ui header" href="https://google.com">
-    <i class="vote yea icon"></i>
+    <img src="/logo.svg" alt="BD Elections" height="2rem">
     <div class="ui content huge text">BD Elections</div>
 </a>
