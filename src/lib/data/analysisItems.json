@@ -5,9 +5,9 @@
         "description": "We visualize the number of times AL and BNP have won in each of the 300 seats during the 1991-2008 general elections.",
         "thumb": "mainp_win_diff.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_diff.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -33,9 +33,9 @@
         "description": "If change in the 'seat winner' party matches with the change in the 'election winner' party, we declare the seat as a 'swing' seat. Here, we count how many times a seat has been a 'swing' seat.",
         "thumb": "mainp_win_swing.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_swing.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -61,9 +61,9 @@
         "description": "Percentage of votes each major party has received out of the total registered voters. This vote percentage is different from the usual percentage which is calculated out of total valid votes casted (turnout).",
         "thumb": "bigp_votepc_turnout.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_votepc_turnout.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -90,9 +90,9 @@
         "description": "Turnout refers to the % of voters casting their votes out of the total registered voters. Inspecting the turnout average and variance will disclose the interest (or disinterest) of voters going to the polls of each region.",
         "thumb": "turnout_pc_med_map.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/turnout_pc_med_std.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -158,9 +158,9 @@
         "description": "A look at where parties other than AL and BNP have won, and where their stronghold lies.",
         "thumb": "not_mainp_wins.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/not_mainp_wins.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -186,9 +186,9 @@
         "description": "Find out the regions or seats where Jatiyo Party and Jamaat have won multiple times.",
         "thumb": "jjp_stronghold.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/jjp_stronghold.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -214,9 +214,9 @@
         "description": "Portrays how BNP and AL perform in urban and rural seats.",
         "thumb": "mainp_region_win_avg.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_region_win.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -249,9 +249,9 @@
         "description": "Counting how many times the winner party changes in each of the 300 seats.",
         "thumb": "allp_win_change.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/allp_win_change.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -277,9 +277,9 @@
         "description": "Analyzing the vote difference % and looking into the close battles and landslide victories.",
         "thumb": "allp_close_contest.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/vote_diff_med.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "figure",
@@ -317,9 +317,9 @@
         "description": "Analysis of close contest wins and losses for the big parties. Close contests are considered where the vote difference % of top 2 candidates are less than 10%.",
         "thumb": "bigp_cc_win_pc.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_cc_trend.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -357,9 +357,9 @@
         "description": "Inspecting the registered voters distribution and how they are spread out across the country for the year 2008.",
         "thumb": "voters_map.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/voters_map.ipynb",
-        "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
+        "data_folder_url": "/dataout/",
         "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
-        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
+        "map_folder_url": "/mapout/",
         "sections": [
             {
                 "type": "figure",

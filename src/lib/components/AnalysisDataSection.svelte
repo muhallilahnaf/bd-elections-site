@@ -4,12 +4,12 @@
 
 <!-- /analysis data section -->
 <div class="btn-container">
-	<!-- data view btn -->
+	<!-- data download btn -->
 	<div>
-		<a href={`${folder}${section.file_name}`} target="_blank">
+		<a href={`${folder}${section.file_name}`} download={section.file_name} target="_blank">
 			<button class="tiny ui compact labeled icon primary button">
-				<i class="arrow right icon"></i>
-				<span> View full analysis result (.csv)</span>
+				<i class="arrow down icon"></i>
+				<span> Download full analysis result (.csv)</span>
 			</button>
 		</a>
 	</div>

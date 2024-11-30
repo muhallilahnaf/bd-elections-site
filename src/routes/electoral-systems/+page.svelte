@@ -3,7 +3,7 @@
 	import ElectoralAnalysisSection from '$lib/components/ElectoralAnalysisSection.svelte';
 	import ElectoralDataSection from '$lib/components/ElectoralDataSection.svelte';
 	import menuData from '$lib/data/menuData.json';
-	import data from '$lib/data/electoralSystemItems.json';
+	import data from '$lib/data/electoralItems.json';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -32,7 +32,7 @@
 	{#each data.years.entries() as [i, year]}
 		<div class="ui bottom attached tab segment" class:active={i == 0} data-tab={year.toString()}>
 			<!-- data section -->
-			 <ElectoralDataSection data_url={data.data_url} notebook_url={data.notebook_url} {year} />
+			 <ElectoralDataSection folder={data.data_folder_url} file_name={data.data_file_name} notebook_url={data.notebook_url} {year} />
 			<!-- analysis sections -->
 			{#each data.sections as section}
 				<ElectoralAnalysisSection {section} figure_url={data.figure_url} {year} />

@@ -13,6 +13,15 @@
             <span class="ui large text">{filedata.name}</span>
         </a>
     </div>
+	<!-- file download btn -->
+	<div class="ui fitted compact basic segment">
+        <a href={'/data/' + filedata.name} download={filedata.name} target="_blank">
+            <button class="tiny ui compact labeled icon primary button">
+                <i class="arrow down icon"></i>
+                Download
+            </button>
+        </a>
+    </div>
     <!-- data preview -->
 	<div>
 		<p class="data-preview">Data preview:</p>

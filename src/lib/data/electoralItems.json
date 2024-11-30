@@ -1,7 +1,8 @@
 {
     "years": [1991, 1996, 2001, 2008],
     "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/electoral_method_@year@.ipynb",
-    "data_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/method_big_@year@.csv",
+    "data_folder_url": "/dataout/",
+    "data_file_name": "method_big_@year@.csv",
     "figure_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/method_big_@year@.png",
     "sections": [
         {

@@ -1,16 +1,20 @@
 <script>
-    let { data_url, notebook_url, year } = $props();
+    let { folder, file_name, notebook_url, year } = $props();
 </script>
 
 <!-- /electoral-systems data section -->
 <div class="ui basic padded segment">
     <div class="btn-container">
-        <!-- data view btn -->
+        <!-- data download btn -->
         <div>
-            <a href={data_url.replace('@year@', year)} target="_blank">
+            <a 
+                href={folder + file_name.replace('@year@', year)} 
+                download={file_name.replace('@year@', year)} 
+                target="_blank"
+            >
                 <button class="tiny ui compact labeled icon primary button">
-                    <i class="arrow right icon"></i>
-                    <span> View full analysis result (.csv)</span>
+                    <i class="arrow down icon"></i>
+                    <span> Download full analysis result (.csv)</span>
                 </button>
             </a>
         </div>
