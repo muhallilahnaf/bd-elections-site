@@ -1,6 +1,6 @@
 <script>
 	import PageHeading from '$lib/components/PageHeading.svelte';
-	import Cards from '$lib/components/Cards.svelte';
+	import Cards from '$lib/components/HomepageCards.svelte';
 	import DataSegment from '$lib/components/DataSegment.svelte';
 	import menuData from '$lib/data/menuData.json';
 	import shapefileData from '$lib/data/shapefileData.json';
@@ -16,7 +16,6 @@
 </script>
 
 <!-- /data route -->
- 
 <PageHeading {heading} {subheading} />
 
 <!-- data files and preview -->
@@ -45,17 +44,15 @@
     <!-- columns -->
 	<div class="ui fitted compact basic segment">
 		<p class="data-preview">Shapefile columns:</p>
-		<div class="table-wrapper">
-			<table class="ui very compact small unstackable table">
-				<thead>
-					<tr>
-						{#each shapefileData.columns as col}
-							<th>{col}</th>
-						{/each}
-					</tr>
-				</thead>
-			</table>
-		</div>
+		<table class="ui very compact small stackable table">
+			<thead>
+				<tr>
+					{#each shapefileData.columns as col}
+						<th>{col}</th>
+					{/each}
+				</tr>
+			</thead>
+		</table>
 	</div>
 </div>
 
@@ -73,12 +70,6 @@
 </div>
 
 <style>
-    .table-wrapper {
-        overflow-x: auto;
-    }
-    table {
-        width: 100%;
-    }
 	.data-preview {
 		margin-bottom: 1rem;
 	}

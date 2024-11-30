@@ -5,14 +5,11 @@
 	import AnalysisMapSection from '$lib/components/AnalysisMapSection.svelte';
 	import analysisItems from '$lib/data/analysisItems.json';
 
-    let { slug } = $props();
-
-	const data = analysisItems.find((item => item.slug == slug))
+    let { data } = $props();
+	const analysisData = analysisItems.find((item => item.slug == data.slug))	
 </script>
 
 <!-- /analysis/[slug] page -->
-
-<p>{slug}</p>
 
 <!-- back to /analysis -->
 <BackButton />
@@ -21,18 +18,18 @@
 <div class="ui container">
 	<!-- analysis title -->
 	<div class="ui basic segment">
-		<h2 class="ui header">{data.title}</h2>
-		<p>{data.description}</p>
+		<h2 class="ui header">{analysisData.title}</h2>
+		<p>{analysisData.description}</p>
 	</div>
 	<!-- analysis sections -->
-	{#each data.sections as section}
+	{#each analysisData.sections as section}
 		<div class="ui basic padded segment">
 			{#if section.type === 'data'}
-				<AnalysisDataSection {section} nblink={data.notebook_url} folder={data.data_folder_url} />
+				<AnalysisDataSection {section} nblink={analysisData.notebook_url} folder={analysisData.data_folder_url} />
 			{:else if section.type === 'figure'}
-				<AnalysisFigureSection {section} folder={data.figure_folder_url} />
+				<AnalysisFigureSection {section} folder={analysisData.figure_folder_url} />
 			{:else if section.type === 'map'}
-				<AnalysisMapSection {section} folder={data.map_folder_url} />
+				<AnalysisMapSection {section} folder={analysisData.map_folder_url} />
 			{/if}
 		</div>
 	{/each}

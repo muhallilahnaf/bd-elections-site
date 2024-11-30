@@ -6,8 +6,8 @@
         "thumb": "mainp_win_diff.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_diff.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -34,8 +34,8 @@
         "thumb": "mainp_win_swing.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_swing.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -62,8 +62,8 @@
         "thumb": "bigp_votepc_turnout.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_votepc_turnout.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -91,8 +91,8 @@
         "thumb": "turnout_pc_med_map.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/turnout_pc_med_std.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -159,8 +159,8 @@
         "thumb": "not_mainp_wins.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/not_mainp_wins.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -187,8 +187,8 @@
         "thumb": "jjp_stronghold.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/jjp_stronghold.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -215,8 +215,8 @@
         "thumb": "mainp_region_win_avg.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_region_win.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -250,8 +250,8 @@
         "thumb": "allp_win_change.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/allp_win_change.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -278,8 +278,8 @@
         "thumb": "allp_close_contest.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/vote_diff_med.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "figure",
@@ -318,8 +318,8 @@
         "thumb": "bigp_cc_win_pc.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_cc_trend.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "data",
@@ -358,8 +358,8 @@
         "thumb": "voters_map.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/voters_map.ipynb",
         "data_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/",
-        "figure_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/fig/",
-        "map_folder_url": "https://github.com/muhallilahnaf/bd-elections-eda/tree/master/mapout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/mapout/",
         "sections": [
             {
                 "type": "figure",

@@ -5,7 +5,7 @@
 
 <!-- homepage cards -->
 <div class="ui container">
-	<div class="ui {cardCount} stackable cards">
+	<div class="ui {cardCount} stackable inverted cards">
 		{#each menuData as menu}
 			<a class="ui card" href={menu.href}>
 				<img class="image" src={menu.img_src} alt={menu.img_alt} />
@@ -19,3 +19,11 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+</style>

@@ -1,6 +1,9 @@
 <script>
 	import PageHeading from '$lib/components/PageHeading.svelte';
+	import ElectoralAnalysisSection from '$lib/components/ElectoralAnalysisSection.svelte';
+	import ElectoralDataSection from '$lib/components/ElectoralDataSection.svelte';
 	import menuData from '$lib/data/menuData.json';
+	import data from '$lib/data/electoralSystemItems.json';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -12,101 +15,27 @@
 	const dataItem = menuData.find((item) => item.href == path);
 	const heading = dataItem.title;
 	const subheading = dataItem.subtitle;
-
-	const data = {
-		years: [1991, 1996, 2001, 2008],
-		sections: [
-			{
-				title: 'Seat distribution between big parties',
-				description:
-					'Big parties occupy almost the whole of the parliament seats. So, comparison of their seat distribution under different electoral systems paint the fundamental picture of how the parliament will look and how (im)balanced it will be.',
-				file_name: 'method_big_',
-				discussion: [
-					"PR system is the closest to resemble the vote share of different parties. Thus, PR system most accurately reflects people's verdict in the parliament. However, in a two-party system, if there's close contest in significant number of seats, PR can create a parliament that's almost equally (50-50) shared by both parties. It might make the policy-making process slow.",
-					'On the other hand, FPTP system is the farthest away from the vote share, and strongly favors the party with the highest vote share. This is easily noticeable on the 2001 and 2008 elections, where AL and BNP respectively won around 20% less seats than their vote shares. In a two-party system like BD, FPTP, most often than not, can give landslide victory to one party and allow them to suppress the opposition.',
-					'MMP system is in the middle of the PR and FPTP system. Though it does not closely resemble the vote shares, it creates a barrier for the winning party from securing a landslide victory. People can vote and elect their local representative as-is, and parliament can also save itself from being one-sided.'
-				]
-			},
-			{
-				title: 'Seat distribution between small parties',
-				description:
-					'Small parties have almost no power in two-party systems except for helping one of the two big parties achieve majority and form the government. However, if one of the two major parties are out of election or are in major disadvantage, these small parties can play a significant role in determining the nature of the parliament. So, comparison of their seat distribution under different electoral systems is also needed.',
-				file_name: 'method_small_',
-				discussion: [
-					'Just like that of big parties, PR system is the closest to resemble the vote share of small parties. FPTP and MMP can let a small party gain a seat even after getting less votes than needed to gain 1 seat.',
-					'Overall, the differences between different electoral systems for small parties are negligible.'
-				]
-			},
-			{
-				title: 'Seat share comparison between big and small parties',
-				description:
-					'What % of seats big and small parties get under different electoral systems tell us how inclusive and diverse the parliament will be and how easily small voices can make their way into the parliament.',
-				file_name: 'method_bigvsmall_',
-				discussion: [
-					'Except PR system, other systems do not favor the small parties, rather FPTP and MMP make it hard for small parties to enter the parliament. Also, the political sphere got polarised gradually into the two-party system AL and BNP. It decreased the importance of smaller parties over time.'
-				]
-			}
-		]
-	};
 </script>
 
+<!-- /electoral systems page -->
 <PageHeading {heading} {subheading} />
 
-<!-- electoral systems analysis -->
 <div class="ui container">
 	<!-- year tabs -->
 	<div class="ui top attached tabular menu">
 		{#each data.years.entries() as [i, year]}
 			<div class="item" class:active={i == 0} data-tab={year.toString()}>{year}</div>
-			<!-- <div class={(i == 0) ? "active item" : "item"} data-tab={year.toString()}>{year}</div> -->
 		{/each}
 	</div>
 
 	<!-- tab bodies -->
 	{#each data.years.entries() as [i, year]}
 		<div class="ui bottom attached tab segment" class:active={i == 0} data-tab={year.toString()}>
-			<!-- data download -->
-			<div class="ui basic padded segment">
-				<a
-					href={`https://github.com/muhallilahnaf/bd-elections-eda/blob/master/dataout/${data.data_file_name}${year}.csv`}
-					download={`${data.data_file_name}${year}.csv`}
-					target="_blank"
-				>
-					<button class="tiny ui compact labeled icon primary button">
-						<i class="arrow down icon"></i>
-						<span> Download full analysis result (.csv)</span>
-					</button>
-				</a>
-			</div>
+			<!-- data section -->
+			 <ElectoralDataSection data_url={data.data_url} notebook_url={data.notebook_url} {year} />
 			<!-- analysis sections -->
 			{#each data.sections as section}
-				<div class="ui basic padded segment">
-					<!-- analysis title, description -->
-					<div class="ui basic segment">
-						<h2 class="ui header">{section.title}</h2>
-						<p>{section.description}</p>
-					</div>
-
-					<!-- analysis figure, discussion -->
-					<div class="ui stackable grid">
-						<div class="eight wide column">
-							<div class="ui compact basic segment">
-								<img src={section.file_name + year} alt={section.title} class="ui image" />
-							</div>
-						</div>
-						<div class="ui compact basic segment">
-							<div class="ui icon info message">
-								<i class="info icon"></i>
-								<div class="content">
-									<div class="header">Insight</div>
-									{#each section.discussion as disc}
-										<p>{disc}</p>
-									{/each}
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<ElectoralAnalysisSection {section} figure_url={data.figure_url} {year} />
 			{/each}
 		</div>
 	{/each}

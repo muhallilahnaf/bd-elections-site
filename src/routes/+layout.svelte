@@ -55,6 +55,8 @@
 
 <slot />
 
+<div class="page-end-gap"></div>
+
 <Footer/>
 
 <style>
@@ -73,5 +75,8 @@
 	}
 	.row {
 		padding: 0 !important;
+	}
+	.page-end-gap {
+		margin-top: 5rem;
 	}
 </style>

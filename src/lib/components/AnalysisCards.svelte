@@ -21,3 +21,12 @@
         </div>
     </div>
 </div>
+
+
+<style>
+    img {
+		height: 300px;
+        width: 100%;
+		object-fit: cover;
+	}
+</style>
