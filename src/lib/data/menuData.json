@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Data",
+        "href": "/data",
+        "icon": "table",
+		"subtitle": "Data (candidate, party, and seat) of general elections.",
+		"img_src": "/ss/ss_data.png",
+		"img_alt": "data menu"
+    },
+    {
+        "title": "Electoral Systems",
+        "href": "/electoral-systems",
+        "icon": "balance scale",
+		"subtitle": "Comparison of different electoral systems (FPTP, PR, MMP) in general elections.",
+		"img_src": "/ss/ss_electoral_systems.png",
+		"img_alt": "electoral systems menu"
+    },
+    {
+        "title": "Analysis",
+        "href": "/analysis",
+        "icon": "chartline",
+		"subtitle": "Detailed analysis of general elections.",
+		"img_src": "/ss/ss_analysis.png",
+		"img_alt": "analysis menu"
+    }
+]

@@ -1,0 +1,443 @@
+[
+    {
+        "slug": "mainp_win_diff",
+        "title": "AL and BNP win count per seat",
+        "description": "We visualize the number of times AL and BNP have won in each of the 300 seats during the 1991-2008 general elections.",
+        "thumb": "mainp_win_diff.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_diff.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_win_diff.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_win_diff.png",
+                "description": "Highlighting the win count of AL and BNP in each seat. Seats with darker shades have more AL wins. Seats with lighter shades have more BNP wins.",
+                "discussion": "This visualizes which regions are pro-BNP and pro-AL."
+            },
+            {
+                "type": "map",
+                "file_name": "mainp_win_diff.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_win_swing",
+        "title": "AL and BNP 'swing' seats",
+        "description": "If change in the 'seat winner' party matches with the change in the 'election winner' party, we declare the seat as a 'swing' seat. Here, we count how many times a seat has been a 'swing' seat.",
+        "thumb": "mainp_win_swing.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_win_swing.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_win_swing.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_win_swing.png",
+                "description": "Highlighting the frequency of swing seats. Since 4 elections are considered, maximum 3 swings are possible.",
+                "discussion": "Urban regions like Dhaka, Comilla, Barishal, Bogura, Mymensingh, Sylhet have more influence on deciding which party is winning the election. Rural regions have less swing and predictable outcome."
+            },
+            {
+                "type": "map",
+                "file_name": "mainp_win_swing.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    },
+    {
+        "slug": "bigp_votepc_turnout",
+        "title": "Vote % of major parties out of total voters",
+        "description": "Percentage of votes each major party has received out of the total registered voters. This vote percentage is different from the usual percentage which is calculated out of total valid votes casted (turnout).",
+        "thumb": "bigp_votepc_turnout.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_votepc_turnout.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "bigp_votepc_turnout.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "bigp_votepc_turnout.png",
+                "description": "Stacked area plot showing the % of votes each party has received out of total voters in each of the 4 elections. The top 'turnout_pc' line denotes the % of valid votes casted out of total voters (aka turnout %).",
+                "discussion": "AL was able to steadily grow their % of votes, while BNP kept their % steady."
+            },
+            {
+                "type": "figure",
+                "file_name": "bigp_votepc_turnout_sum.png",
+                "description": "Pie chart showing the % of votes each party has received out of the total votes casted in 1991-2008 elections.",
+                "discussion": "AL has received 44% of all votes casted in the 4 elections, while BNP has received 38% of it."
+            }
+        ]
+    },
+    {
+        "slug": "turnout_pc_med_std",
+        "title": "Turnout analysis (average and variance)",
+        "description": "Turnout refers to the % of voters casting their votes out of the total registered voters. Inspecting the turnout average and variance will disclose the interest (or disinterest) of voters going to the polls of each region.",
+        "thumb": "turnout_pc_med_map.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/turnout_pc_med_std.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "turnout_pc_med.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_med_hist.png",
+                "description": "Histogram showing the median turnout % of 300 seats in 4 elections.",
+                "discussion": "It is evident that most seats have a median turnout of 70-75%."
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_med_map.png",
+                "description": "Highlighting the median turnout % of each of the 300 seats.",
+                "discussion": "As we move from west to east of BD, voters are less interested in showing up on the polls."
+            },
+            {
+                "type": "data",
+                "file_name": "turnout_pc_div_med.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_med_div_map.png",
+                "description": "Highlighting the median turnout % of each division.",
+                "discussion": "Khulna and Rajshahi divisions have the highest average turnout, followed by Rangpur and Dhaka. Barishal division has the lowest average turnout."
+            },
+            {
+                "type": "data",
+                "file_name": "turnout_pc_std.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_std_hist.png",
+                "description": "Histogram showing the standard deviation of turnout % of 300 seats in 4 elections.",
+                "discussion": "It is evident that most seats have a turnout with a standard deviation of 12.5-15."
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_std_map.png",
+                "description": "Highlighting the standard deviation of turnout % of each of the 300 seats.",
+                "discussion": "Seats in the Comilla, Barishal, Chittagong, Mymensingh region have more variance in turnout."
+            },
+            {
+                "type": "data",
+                "file_name": "turnout_pc_div_std.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "turnout_pc_std_div_map.png",
+                "description": "Highlighting the standard deviation of turnout % of each division.",
+                "discussion": "Khulna and Rajshahi divisions have the lowest variance in turnout, followed by Rangpur and Dhaka. Turnout varies the highest in Barishal division."
+            }
+        ]
+    },
+    {
+        "slug": "not_mainp_wins",
+        "title": "Smaller party strongholds",
+        "description": "A look at where parties other than AL and BNP have won, and where their stronghold lies.",
+        "thumb": "not_mainp_wins.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/not_mainp_wins.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "not_mainp_wins.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "not_mainp_wins.png",
+                "description": "Map visualizing the seats where parties other than AL/BNP have won.",
+                "discussion": "Rangpur, Khulna, Sylhet and Chittagong regions have some strongholds by smaller parties."
+            },
+            {
+                "type": "map",
+                "file_name": "not_mainp_wins.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    },
+    {
+        "slug": "jjp_stronghold",
+        "title": "Jatiyo Party and Jamaat strongholds",
+        "description": "Find out the regions or seats where Jatiyo Party and Jamaat have won multiple times.",
+        "thumb": "jjp_stronghold.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/jjp_stronghold.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "jjp_stronghold.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "jjp_stronghold.png",
+                "description": "Map visualizing the seats where Jatiyo Party and Jamaat have won.",
+                "discussion": "Rangpur has JaPa dominance and Khulna region has some strongholds by both JaPa and Jamaat."
+            },
+            {
+                "type": "map",
+                "file_name": "jjp_stronghold.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_region_win",
+        "title": "Regional (urban/rural) analysis",
+        "description": "Portrays how BNP and AL perform in urban and rural seats.",
+        "thumb": "mainp_region_win_avg.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_region_win.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_region_win.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_region_count.png",
+                "description": "Bar chart visualizing the number of seats in urban and rural areas.",
+                "discussion": "72% seats are in the rural areas and 28% seats are in the urban areas."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_region_win.png",
+                "description": "Bar chart visualizing the number of seats won by AL and BNP in urban and rural areas.",
+                "discussion": "Election win is largely determined by the rural seats as these are in majority. Though the win difference between both parties in rural seats were low in the first two elections, the election winning party won most of the rural seats in the last two elections. BNP seems to be doing a better job in the urban seats."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_region_win_avg.png",
+                "description": "Bar chart visualizing the average number of seats won by AL and BNP in urban and rural areas.",
+                "discussion": "AL performs well in rural areas where BNP has more wins in urban areas on average."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_votepc_distn",
+        "title": "Winner vote % analysis",
+        "description": "Analysis of the vote percentages of winning candidates from BNP and AL.",
+        "thumb": "mainp_votepc_year_distn.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_votepc_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_votepc_distn.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_votepc_distn.png",
+                "description": "Distribution of vote % of winning candidates from BNP and AL.",
+                "discussion": "Most winners from both parties win the election by getting around 50% votes. But winners from BNP are more likely to win by getting around 50% votes. AL candidates have a greater tendency to win elections by getting over 60% votes."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_votepc_year_distn.png",
+                "description": "Distribution of vote % of winning candidates from BNP and AL in the 4 elections 1991-2008.",
+                "discussion": "BNP winners have a greater median vote % than AL winners in the 1991-2001 elections. In the 2008 election, there's a massive increase in the median vote % of AL winners. The median vote % increased gradually over the years. AL candidates have more records of winning seats by high vote %."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_turnout_distn",
+        "title": "Winner turnout % analysis",
+        "description": "Analysis of the turnout rates of seats where BNP and AL candidates have won.",
+        "thumb": "mainp_turnout_year_distn.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_turnout_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_turnout_distn.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_turnout_distn.png",
+                "description": "Distribution of turnout % of seats won by BNP and AL candidates.",
+                "discussion": "BNP has won most seats with 70% turnout, and AL with 80% turnout. Higher turnout favours AL more than BNP. Lower turnout favours BNP more than AL."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_turnout_year_distn.png",
+                "description": "Distribution of turnout % of seats won by BNP and AL in the 4 elections 1991-2008.",
+                "discussion": "BNP winning seats have a greater median turnout in the first 2 elections, but AL has greater median turnout in the last 2 elections. Median turnout has increased over the years for both parties, except for BNP in 2001."
+            }
+        ]
+    },
+    {
+        "slug": "allp_win_change",
+        "title": "Winner change frequency",
+        "description": "Counting how many times the winner party changes in each of the 300 seats.",
+        "thumb": "allp_win_change.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/allp_win_change.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "allp_win_change.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "allp_win_change.png",
+                "description": "Map visualizing the frequency of winner party changes in each seat. Winner party changes more frequently in the seats with darker shades and vice versa.",
+                "discussion": "Winner party doesn't change in Noakhali, Bogura, and Gopalganj regions."
+            },
+            {
+                "type": "map",
+                "file_name": "allp_win_change.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    },
+    {
+        "slug": "vote_diff_med",
+        "title": "Close contest and landslide victories",
+        "description": "Analyzing the vote difference % and looking into the close battles and landslide victories.",
+        "thumb": "allp_close_contest.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/vote_diff_med.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "vote_diff_med_distn.png",
+                "description": "Histogram showing the distribution of median vote difference of each of the 300 seats.",
+                "discussion": "Most seats have a median vote difference <20%, indicating that most seats have close contest between the top 2 candidates."
+            },
+            {
+                "type": "data",
+                "file_name": "allp_close_contest.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "allp_close_contest.png",
+                "description": "Map visualizing the seats that have a close contest (average vote difference <20%). Seats with lighter shade have closer contest on avarage than seats with a darker shade.",
+                "discussion": "Most seats have an average vote difference of less than 10% and go through a close battle."
+            },
+            {
+                "type": "data",
+                "file_name": "allp_landslide_victory.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "allp_landslide_victory.png",
+                "description": "Map visualizing the seats that have a landslide victory i.e. winners winning by a huge margin (>40% vote difference).",
+                "discussion": "Seats around Gopalganj and some seats in the north-east have landslide victory."
+            }
+        ]
+    },
+    {
+        "slug": "bigp_cc_trend",
+        "title": "Close contest analysis",
+        "description": "Analysis of close contest wins and losses for the big parties. Close contests are considered where the vote difference % of top 2 candidates are less than 10%.",
+        "thumb": "bigp_cc_win_pc.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_cc_trend.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "bigp_cc_win_count.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "bigp_cc_win_pc.png",
+                "description": "Pie chart showing the % of seats big parties have won through a close contest (vote difference % <10%).",
+                "discussion": "AL has won majority of the close contests, closely followed by BNP."
+            },
+            {
+                "type": "data",
+                "file_name": "bigp_cc_lose_count.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "bigp_cc_lose_pc.png",
+                "description": "Pie chart showing the % of seats big parties have lost through a close contest (vote difference % <10%).",
+                "discussion": "AL has lost almost half of the close battles, whereas BNP has lost quite fewer close battles than AL."
+            },
+            {
+                "type": "figure",
+                "file_name": "vdiff_dist.png",
+                "description": "Distribution of the vote difference % for each year shows that as years went by, election results became more polarised.",
+                "discussion": "The median vote difference % increased gradually, indicating that most of the winner candidates have won by a bigger margin than that of the previous year. 2008 election had quite a lot outliers than any other previous elections."
+            }
+        ]
+    },
+    {
+        "slug": "voters_map",
+        "title": "Voters distribution across BD (2008)",
+        "description": "Inspecting the registered voters distribution and how they are spread out across the country for the year 2008.",
+        "thumb": "voters_map.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/voters_map.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "voters_distn.png",
+                "description": "Histogram of the registered voters for the year 2008.",
+                "discussion": "Most seats have 2-3 lacs of registered voters."
+            },
+            {
+                "type": "figure",
+                "file_name": "voters_map.png",
+                "description": "Map visualizing the spread of voters across the country.",
+                "discussion": "Most seats have an even distribution of voters except the urban regions of Dhaka, Chittagong, and Sylhet."
+            },
+            {
+                "type": "map",
+                "file_name": "voters_map.html",
+                "description": "Interactive map of the above figure. Hover and click for more details."
+            }
+        ]
+    }
+]
+
+
