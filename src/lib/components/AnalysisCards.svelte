@@ -28,5 +28,9 @@
 		height: 300px;
         width: 100%;
 		object-fit: cover;
+        opacity: 0.8;
 	}
+    .card {
+        margin-bottom: 4rem !important;
+    }
 </style>

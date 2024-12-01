@@ -4,40 +4,6 @@ import fs from 'fs'
 import path from 'path'
 import fetch from 'node-fetch'
 
-// read data json files
-const readDataFiles = () => {
-	const analysisItemsPath = path.resolve('src', 'lib', 'data', 'analysisItems.json')
-	const analysisItemsText = fs.readFileSync(analysisItemsPath, {encoding: 'utf8'})
-	const analysisItems = JSON.parse(analysisItemsText)
-
-	const electoralItemsPath = path.resolve('src', 'lib', 'data', 'electoralItems.json')
-	const electoralItemsText = fs.readFileSync(electoralItemsPath, {encoding: 'utf8'})
-	const electoralItems = JSON.parse(electoralItemsText)
-
-	return {analysis: analysisItems, electoral: electoralItems}
-}
-
-// gather name of files which need to be fetched
-const getFileNames = (data) => {
-	let filenames = []
-	data.analysis.forEach(item => {
-		item.sections.forEach(section => {
-			if (section.type == 'data' || section.type == 'map') {
-				filenames.push({
-					type: section.type,
-					name: section.file_name
-				})
-			}
-		})
-	})
-	data.electoral.years.forEach(year => {		
-		filenames.push({
-			type: 'data',
-			name: `method_big_${year}.csv`
-		})
-	})
-	return filenames
-}
 
 
 const fetchAssets = () => ({
@@ -64,7 +30,7 @@ const fetchAssets = () => ({
 					const data = await res.json();
 					if (!data || !Array.isArray(data)) throw new Error(`${name} folder contents not found`);
 
-					return new Promise((resolve, reject) => {
+					return new Promise((resolve) => {
 						resolve({ name, data })
 					})
 				})
@@ -85,7 +51,7 @@ const fetchAssets = () => ({
 			// fetch all files from each folder
 			allFiles.forEach(async (file) => {
 				let name = file.name || '';
-				let download_url = file.download_url || '';
+				let download_url = file.url || '';
 				let folder = file.folder || '';
 
 				if (download_url == '') throw new Error(`empty download link for file ${name}`)

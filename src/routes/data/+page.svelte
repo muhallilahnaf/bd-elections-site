@@ -18,44 +18,44 @@
 <!-- /data route -->
 <PageHeading {heading} {subheading} />
 
-<!-- data files and preview -->
-{#each data.results as filedata}
-	<DataSegment {filedata} />
-{/each}
+<div class="ui container">
+	<!-- data files and preview -->
+	{#each data.results as filedata}
+		<DataSegment {filedata} />
+	{/each}
 
-
-<!-- shapefile -->
-<div class="ui very padded basic segment">
-    <!-- file name with link to github -->
-    <div class="ui fitted compact basic segment">
-        <a href={shapefileData.html_url} class="filename" target="_blank">
-            <span class="ui large text">{shapefileData.name}</span>
-        </a>
-    </div>
-    <!-- description and attribution -->
-    <div class="ui fitted compact basic segment">
-        <p>{shapefileData.description}</p>
-		<p>
-			<i class="ui text grey">
-				Attribution: Shapefile generated from <a href={shapefileData.attribution_link}>link</a>
-			</i>
-		</p>
-    </div>
-    <!-- columns -->
-	<div class="ui fitted compact basic segment">
-		<p class="data-preview">Shapefile columns:</p>
-		<table class="ui very compact small stackable table">
-			<thead>
-				<tr>
-					{#each shapefileData.columns as col}
-						<th>{col}</th>
-					{/each}
-				</tr>
-			</thead>
-		</table>
+	<!-- shapefile -->
+	<div class="ui very padded basic segment">
+		<!-- file name with link to github -->
+		<div class="ui fitted compact basic segment">
+			<a href={shapefileData.html_url} class="filename" target="_blank">
+				<span class="ui large text">{shapefileData.name}</span>
+			</a>
+		</div>
+		<!-- description and attribution -->
+		<div class="ui fitted compact basic segment">
+			<p>{shapefileData.description}</p>
+			<p>
+				<i class="ui text grey">
+					Attribution: Shapefile generated from <a href={shapefileData.attribution_link}>link</a>
+				</i>
+			</p>
+		</div>
+		<!-- columns -->
+		<div class="ui fitted compact basic segment">
+			<p class="data-preview">Shapefile columns:</p>
+			<table class="ui very compact small stackable table">
+				<thead>
+					<tr>
+						{#each shapefileData.columns as col}
+							<th>{col}</th>
+						{/each}
+					</tr>
+				</thead>
+			</table>
+		</div>
 	</div>
 </div>
-
 
 <!-- data source -->
 <div class="ui container">
