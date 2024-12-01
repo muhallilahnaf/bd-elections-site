@@ -4,9 +4,10 @@
 			<a href="https://github.com/muhallilahnaf/bd-elections-site">
 				<button class="ui labeled compact inverted grey icon button">
 					<i class="github icon"></i>
-					Personal project
+					GitHub
 				</button>
 			</a>
+			<p class="text">personal project, I bear no responsibilities.</p>
 		</div>
 	</div>
 </footer>
@@ -25,8 +26,11 @@
 	}
 	.flex {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.text {
+		color: lightgrey;
 	}
 </style>

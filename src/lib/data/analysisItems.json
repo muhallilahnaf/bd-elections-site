@@ -57,7 +57,7 @@
     },
     {
         "slug": "bigp_votepc_turnout",
-        "title": "Vote % of major parties out of total registered voters",
+        "title": "Vote % of major parties out of total voters",
         "description": "Percentage of votes each major party has received out of the total registered voters. This vote percentage is different from the usual percentage which is calculated out of total valid votes casted (turnout).",
         "thumb": "bigp_votepc_turnout.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/bigp_votepc_turnout.ipynb",
@@ -240,6 +240,64 @@
                 "file_name": "mainp_region_win_avg.png",
                 "description": "Bar chart visualizing the average number of seats won by AL and BNP in urban and rural areas.",
                 "discussion": "AL performs well in rural areas where BNP has more wins in urban areas on average."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_votepc_distn",
+        "title": "Winner vote % analysis",
+        "description": "Analysis of the vote percentages of winning candidates from BNP and AL.",
+        "thumb": "mainp_votepc_year_distn.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_votepc_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_votepc_distn.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_votepc_distn.png",
+                "description": "Distribution of vote % of winning candidates from BNP and AL.",
+                "discussion": "Most winners from both parties win the election by getting around 50% votes. But winners from BNP are more likely to win by getting around 50% votes. AL candidates have a greater tendency to win elections by getting over 60% votes."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_votepc_year_distn.png",
+                "description": "Distribution of vote % of winning candidates from BNP and AL in the 4 elections 1991-2008.",
+                "discussion": "BNP winners have a greater median vote % than AL winners in the 1991-2001 elections. In the 2008 election, there's a massive increase in the median vote % of AL winners. The median vote % increased gradually over the years. AL candidates have more records of winning seats by high vote %."
+            }
+        ]
+    },
+    {
+        "slug": "mainp_turnout_distn",
+        "title": "Winner turnout % analysis",
+        "description": "Analysis of the turnout rates of seats where BNP and AL candidates have won.",
+        "thumb": "mainp_turnout_year_distn.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/mainp_turnout_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "data",
+                "file_name": "mainp_turnout_distn.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_turnout_distn.png",
+                "description": "Distribution of turnout % of seats won by BNP and AL candidates.",
+                "discussion": "BNP has won most seats with 70% turnout, and AL with 80% turnout. Higher turnout favours AL more than BNP. Lower turnout favours BNP more than AL."
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_turnout_year_distn.png",
+                "description": "Distribution of turnout % of seats won by BNP and AL in the 4 elections 1991-2008.",
+                "discussion": "BNP winning seats have a greater median turnout in the first 2 elections, but AL has greater median turnout in the last 2 elections. Median turnout has increased over the years for both parties, except for BNP in 2001."
             }
         ]
     },

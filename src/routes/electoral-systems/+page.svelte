@@ -2,6 +2,7 @@
 	import PageHeading from '$lib/components/PageHeading.svelte';
 	import ElectoralAnalysisSection from '$lib/components/ElectoralAnalysisSection.svelte';
 	import ElectoralDataSection from '$lib/components/ElectoralDataSection.svelte';
+	import ElectoralComparisonTable from '$lib/components/ElectoralComparisonTable.svelte';
 	import menuData from '$lib/data/menuData.json';
 	import data from '$lib/data/electoralItems.json';
 	import { onMount } from 'svelte';
@@ -20,6 +21,10 @@
 <!-- /electoral systems page -->
 <PageHeading {heading} {subheading} />
 
+<!-- electoral systems comparison table -->
+<ElectoralComparisonTable {data} />
+
+<!-- electoral systems analysis tabs -->
 <div class="ui container">
 	<!-- year tabs -->
 	<div class="ui top attached tabular menu">
