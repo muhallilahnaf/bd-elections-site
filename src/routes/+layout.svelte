@@ -3,9 +3,21 @@
 	import Logo from '$lib/components/Logo.svelte';
 	import { onMount } from 'svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import seatsDataStore from '$lib/store/seatsData.svelte';
+	import {readCSV} from '$lib/helper'
 
-	onMount(() => {
+	onMount(async () => {
+		
+		// activate dropdown menu (for mobile and tablet devices)
 		window.$('.ui.dropdown').dropdown({ action: 'select' });
+
+		console.log(seatsDataStore.seatsData.length);
+		
+
+		// load seat data from csv
+		const seatsData = await readCSV('data/seat_data.csv');
+		seatsDataStore.seatsData = seatsData;
+		console.log(seatsDataStore.seatsData.length);
 	});
 </script>
 

@@ -8,7 +8,7 @@
 
 <style>
 	iframe {
-		width: 80vw;
-		height: 80vh;
+		width: 70vw;
+		height: 70vh;
 	}
 </style>

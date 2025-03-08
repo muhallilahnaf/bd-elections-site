@@ -1,10 +1,14 @@
-<!-- back to \analysis button -->
+<script>
+	let { route, text } = $props()
+</script>
+
+<!-- back to \{route} button -->
 <div class="ui container back-btn-container">
 	<div class="ui basic segment">
-		<a href="/analysis">
+		<a href={route}>
 			<button class="tiny ui compact labeled icon button">
 				<i class="arrow left icon"></i>
-				Back to analysis main page
+				{text}
 			</button>
 		</a>
 	</div>

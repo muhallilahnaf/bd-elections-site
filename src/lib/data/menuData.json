@@ -22,5 +22,13 @@
 		"subtitle": "Detailed analysis of general elections.",
 		"img_src": "/ss/ss_analysis.png",
 		"img_alt": "analysis menu"
+    },
+    {
+        "title": "Seats",
+        "href": "/kys",
+        "icon": "search location",
+		"subtitle": "Detailed info of your electoral seat/constituency.",
+		"img_src": "/ss/ss_kys.png",
+		"img_alt": "know your seat menu"
     }
 ]

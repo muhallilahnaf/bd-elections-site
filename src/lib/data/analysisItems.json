@@ -87,7 +87,7 @@
     {
         "slug": "turnout_pc_med_std",
         "title": "Turnout analysis (average and variance)",
-        "description": "Turnout refers to the % of voters casting their votes out of the total registered voters. Inspecting the turnout average and variance will disclose the interest (or disinterest) of voters going to the polls of each region.",
+        "description": "Turnout refers to the % of voters casting their votes out of the total registered voters. Inspecting the turnout average and variance will reveal the willingness of voters going to the polls.",
         "thumb": "turnout_pc_med_map.png",
         "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/turnout_pc_med_std.ipynb",
         "data_folder_url": "/dataout/",
@@ -102,13 +102,13 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_med_hist.png",
-                "description": "Histogram showing the median turnout % of 300 seats in 4 elections.",
+                "description": "Histogram showing the median turnout % of the seats in 4 elections.",
                 "discussion": "It is evident that most seats have a median turnout of 70-75%."
             },
             {
                 "type": "figure",
                 "file_name": "turnout_pc_med_map.png",
-                "description": "Highlighting the median turnout % of each of the 300 seats.",
+                "description": "Highlighting the median turnout % of each seat.",
                 "discussion": "As we move from west to east of BD, voters are less interested in showing up on the polls."
             },
             {
@@ -118,8 +118,14 @@
             },
             {
                 "type": "figure",
+                "file_name": "turnout_pc_div_med.png",
+                "description": "Bar chart highlighting the median turnout % of each division.",
+                "discussion": "Khulna and Rajshahi divisions have the highest average turnout, followed by Rangpur and Dhaka. Barishal division has the lowest average turnout."
+            },
+            {
+                "type": "figure",
                 "file_name": "turnout_pc_med_div_map.png",
-                "description": "Highlighting the median turnout % of each division.",
+                "description": "Map highlighting the median turnout % of each division.",
                 "discussion": "Khulna and Rajshahi divisions have the highest average turnout, followed by Rangpur and Dhaka. Barishal division has the lowest average turnout."
             },
             {
@@ -130,13 +136,13 @@
             {
                 "type": "figure",
                 "file_name": "turnout_pc_std_hist.png",
-                "description": "Histogram showing the standard deviation of turnout % of 300 seats in 4 elections.",
+                "description": "Histogram showing the standard deviation of turnout % of the seats in 4 elections.",
                 "discussion": "It is evident that most seats have a turnout with a standard deviation of 12.5-15."
             },
             {
                 "type": "figure",
                 "file_name": "turnout_pc_std_map.png",
-                "description": "Highlighting the standard deviation of turnout % of each of the 300 seats.",
+                "description": "Highlighting the standard deviation of turnout % of each seat.",
                 "discussion": "Seats in the Comilla, Barishal, Chittagong, Mymensingh region have more variance in turnout."
             },
             {
@@ -240,6 +246,28 @@
                 "file_name": "mainp_region_win_avg.png",
                 "description": "Bar chart visualizing the average number of seats won by AL and BNP in urban and rural areas.",
                 "discussion": "AL performs well in rural areas where BNP has more wins in urban areas on average."
+            },
+            {
+                "type": "data",
+                "file_name": "mainp_region_votepc.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_region_votepc.png",
+                "description": "Distribution of vote percentages of AL and BNP in urban and rural areas.",
+                "discussion": "BNP consistently performs better in urban regions compared to AL. However, AL has improved in urban years in the later years."
+            },
+            {
+                "type": "data",
+                "file_name": "mainp_region_votepc_avg.csv",
+                "description": ""
+            },
+            {
+                "type": "figure",
+                "file_name": "mainp_region_votepc_avg.png",
+                "description": "Bar chart visualizing average vote percentages of AL and BNP in urban and rural areas.",
+                "discussion": "Urban areas have higher average vote percentages than rural areas, indicating lower number of wasted votes and less interest of the voters in smaller parties."
             }
         ]
     },

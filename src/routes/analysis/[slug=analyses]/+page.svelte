@@ -12,7 +12,7 @@
 <!-- /analysis/[slug] page -->
 
 <!-- back to /analysis -->
-<BackButton />
+<BackButton route="/analysis" text="analysis page" />
 
 <!-- analysis results -->
 <div class="ui container">

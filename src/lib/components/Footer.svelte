@@ -2,12 +2,11 @@
 	<div class="ui container">
 		<div class="flex">
 			<a href="https://github.com/muhallilahnaf/bd-elections-site">
-				<button class="ui labeled compact inverted grey icon button">
+				<button class="ui icon inverted button" aria-label="GitHub">
 					<i class="github icon"></i>
-					GitHub
 				</button>
+				<span>Personal project. I bear no responsibilities.</span>
 			</a>
-			<p class="text">personal project, I bear no responsibilities.</p>
 		</div>
 	</div>
 </footer>
@@ -30,7 +29,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.text {
-		color: lightgrey;
+	a span {
+		color: white;
 	}
 </style>
