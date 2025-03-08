@@ -1,0 +1,301 @@
+seat_no,seat,district,division,region,seat_areas
+1,Panchagarh-1,Panchagarh,Rangpur,Urban,"Panchagarh Sadar, Atwari Upazila, and Tetulia Upazila"
+2,Panchagarh-2,Panchagarh,Rangpur,Rural,"Boda Upazila, and Debiganj Upazila"
+3,Thakurgaon-1,Thakurgaon,Rangpur,Urban,Thakurgaon Sadar
+4,Thakurgaon-2,Thakurgaon,Rangpur,Rural,"Baladangi Upazila, Haripur Upazila, and Ranisankail Upazila: Dhormogarh, and Kashipur Unions"
+5,Thakurgaon-3,Thakurgaon,Rangpur,Rural,"Pirganj Upazila, and Ranisankail Upazila: Hosengaon, Nekmorod, Lehemba, Bachor, Ratore, and Nonduar Unions"
+6,Dinajpur-1,Dinajpur,Rangpur,Rural,"Birganj Upazila, and Kaharol Upazila"
+7,Dinajpur-2,Dinajpur,Rangpur,Rural,"Bochaganj Upazila, and Birol Upazila"
+8,Dinajpur-3,Dinajpur,Rangpur,Urban,Dinajpur Sadar
+9,Dinajpur-4,Dinajpur,Rangpur,Rural,"Khansama Upazila, and Chirirbandar Upazila"
+10,Dinajpur-5,Dinajpur,Rangpur,Rural,"Parbatipur Upazila, and Fulbari Upazila"
+11,Dinajpur-6,Dinajpur,Rangpur,Rural,"Nawabganj Upazila, Birampur Upazila, Hakimpur Upazila, and Ghoraghat Upazila"
+12,Nilphamari-1,Nilphamari,Rangpur,Rural,"Domar Upazila, and Dimla Upazila"
+13,Nilphamari-2,Nilphamari,Rangpur,Urban,Nilphamari Sadar
+14,Nilphamari-3,Nilphamari,Rangpur,Rural,Jaldhaka Upazila
+15,Nilphamari-4,Nilphamari,Rangpur,Rural,"Sayedpur Upazila, and Kishoreganj Upazila"
+16,Lalmonirhat-1,Lalmonirhat,Rangpur,Rural,"Patgram Upazila, and Hatibandha Upazila"
+17,Lalmonirhat-2,Lalmonirhat,Rangpur,Rural,"Kaliganj Upazila, and Aditmari Upazila"
+18,Lalmonirhat-3,Lalmonirhat,Rangpur,Urban,Lalmonirhat Sadar
+19,Rangpur-1,Rangpur,Rangpur,Rural,"Gangachara Upazila, and Rangpur City Corporation Ward No. 1, 2, 3, 4, 5, 6, 7, and 8"
+20,Rangpur-2,Rangpur,Rangpur,Rural,"Taraganj Upazila, and Badarganj Upazila"
+21,Rangpur-3,Rangpur,Rangpur,Urban,"Rangpur Sadar, and Rangpur City Corporation except for Ward No 1, 2, 3, 4, 5, 6, 7, and 8"
+22,Rangpur-4,Rangpur,Rangpur,Rural,"Pirgacha Upazila, and Kaunia Upazila"
+23,Rangpur-5,Rangpur,Rangpur,Rural,Mithapukur Upazila
+24,Rangpur-6,Rangpur,Rangpur,Rural,Pirganj Upazila
+25,Kurigram-1,Kurigram,Rangpur,Rural,"Bhurungamari Upazila, and Nageswari Upazila"
+26,Kurigram-2,Kurigram,Rangpur,Urban,"Kurigram Sadar, Rajarhat Upazila, and Phulbari Upazila"
+27,Kurigram-3,Kurigram,Rangpur,Rural,Ulipur Upazila
+28,Kurigram-4,Kurigram,Rangpur,Rural,"Rowmari Upazila, Rajibpur Upazila, and Chilmari Upazila"
+29,Gaibandha-1,Gaibandha,Rangpur,Rural,Sundarganj Upazila
+30,Gaibandha-2,Gaibandha,Rangpur,Urban,Gaibandha Sadar
+31,Gaibandha-3,Gaibandha,Rangpur,Rural,"Sadullapur Upazila, and Palashbari Upazila"
+32,Gaibandha-4,Gaibandha,Rangpur,Rural,Gobindaganj Upazila
+33,Gaibandha-5,Gaibandha,Rangpur,Rural,"Fulchhari Upazila, and Shaghata Upazila"
+34,Joypurhat-1,Joypurhat,Rajshahi,Urban,"Joypurhat Sadar, Panchbibi Upazila"
+35,Joypurhat-2,Joypurhat,Rajshahi,Rural,"Akkelpur Upazila, Khetlal Upazila, and Kalai Upazila"
+36,Bogra-1,Bogra,Rajshahi,Rural,"Sariakandi Upazila, and Sonatola Upazila"
+37,Bogra-2,Bogra,Rajshahi,Rural,Shibganj Upazila
+38,Bogra-3,Bogra,Rajshahi,Rural,"Adamdighi Upazila, and Dhupchanchia Upazila"
+39,Bogra-4,Bogra,Rajshahi,Rural,"Kahaloo Upazila, and Nandigram Upazila"
+40,Bogra-5,Bogra,Rajshahi,Rural,"Sherpur Upazila, and Dhunat Upazila"
+41,Bogra-6,Bogra,Rajshahi,Urban,Bogura Sadar
+42,Bogra-7,Bogra,Rajshahi,Rural,"Gabtali Upazila, and Shajahanpur Upazila"
+43,Chapai Nawabganj-1,Chapai Nawabganj,Rajshahi,Rural,Shibganj Upazila
+44,Chapai Nawabganj-2,Chapai Nawabganj,Rajshahi,Rural,"Bholahat Upazila, Gomastapur Upazila, and Nachole Upazila"
+45,Chapai Nawabganj-3,Chapai Nawabganj,Rajshahi,Urban,C.Nawabganj Sadar
+46,Naogaon-1,Naogaon,Rajshahi,Rural,"Porsha Upazila, Shapahar Upazila, and Niamatpur Upazila"
+47,Naogaon-2,Naogaon,Rajshahi,Rural,"Patnitala Upazila, and Dhamoirhat Upazila"
+48,Naogaon-3,Naogaon,Rajshahi,Rural,"Badalgachi Upazila, and Mohadevpur Upazila"
+49,Naogaon-4,Naogaon,Rajshahi,Rural,Manda Upazila
+50,Naogaon-5,Naogaon,Rajshahi,Urban,Naogaon Sadar
+51,Naogaon-6,Naogaon,Rajshahi,Rural,"Raninagar Upazila, and Atrai Upazila"
+52,Rajshahi-1,Rajshahi,Rajshahi,Rural,"Godagari Upazila, and Tanore Upazila"
+53,Rajshahi-2,Rajshahi,Rajshahi,Urban,Rajshahi City Corporation
+54,Rajshahi-3,Rajshahi,Rajshahi,Rural,"Mohanpur Upazila, and Paba Upazila"
+55,Rajshahi-4,Rajshahi,Rajshahi,Rural,Baghmara Upazila
+56,Rajshahi-5,Rajshahi,Rajshahi,Rural,"Durgapur Upazila, and Puthia Upazila"
+57,Rajshahi-6,Rajshahi,Rajshahi,Rural,"Charghat Upazila, and Bagha Upazila"
+58,Natore-1,Natore,Rajshahi,Rural,"Lalpur Upazila, and Bagatipara"
+59,Natore-2,Natore,Rajshahi,Urban,"Natore Sadar, and Naldanga Upazila"
+60,Natore-3,Natore,Rajshahi,Rural,Singra Upazila
+61,Natore-4,Natore,Rajshahi,Rural,"Gurudaspur Upazila, and Baraigram Upazila"
+62,Sirajganj-1,Sirajganj,Rajshahi,Urban,"Kazipur Upazila and Sirajganj Sadar: Mechra, Ratankandi, Bagbati, Chongacha, and Bahuli Unions Mechra, Ratankandi, Bagbati, Chongaccha and Bohuli unions under Sirajganj Sadar Upazila"
+63,Sirajganj-2,Sirajganj,Rajshahi,Urban,"Kamarkhand Upazila, and Sirajganj Sadar except Mechra, Ratankandi, Bagbati, Chongacha, and Bahuli Unions All unions under Sirajganj Sadar Upazila except Mechra, Ratankandi, Bagbati, Chongaccha and Bohuli"
+64,Sirajganj-3,Sirajganj,Rajshahi,Rural,Rayganj Upazila and Tarash Upazila
+65,Sirajganj-4,Sirajganj,Rajshahi,Rural,Ullapara Upazila
+66,Sirajganj-5,Sirajganj,Rajshahi,Rural,Belkuchi Upazila and Chouhali Upazila
+67,Sirajganj-6,Sirajganj,Rajshahi,Rural,Shahzadpur Upazila
+68,Pabna-1,Pabna,Rajshahi,Rural,"Santhia Upazila and Bera Upazila: Bera Municipality, Natun Bharenga, Chakla and Koitola Unions Bera municipality, Haturia Nakalia union, Natun Bharenga union, Chakla union and Koitola union under Bera Upazila"
+69,Pabna-2,Pabna,Rajshahi,Rural,"Sujanagar Upazila and Bera Upazila except Bera Municipality, Natun Bharenga, Chakla and Koitola Unions All unions under Bera Upazila except Bera municipality, Haturia Nakalia union, Natun Bharenga union, Chakla union and Koitola"
+70,Pabna-3,Pabna,Rajshahi,Rural,"Chatmohor Upazila, Bhangura Upazila and Faridpur Upazila"
+71,Pabna-4,Pabna,Rajshahi,Rural,Aatgharia Upazila and Ishwardi Upazila
+72,Pabna-5,Pabna,Rajshahi,Urban,Pabna Sadar
+73,Meherpur-1,Meherpur,Khulna,Urban,"Meherpur Sadar, and Mujibnagar Upazila"
+74,Meherpur-2,Meherpur,Khulna,Rural,Gangni Upazila
+75,Kushtia-1,Kushtia,Khulna,Rural,Daulatpur Upazila
+76,Kushtia-2,Kushtia,Khulna,Rural,Bheramara Upazila and Mirpur Upazila
+77,Kushtia-3,Kushtia,Khulna,Urban,Kushtia Sadar
+78,Kushtia-4,Kushtia,Khulna,Rural,Kumarkhali Upazila and Khoksa Upazila
+79,Chuadanga-1,Chuadanga,Khulna,Urban,"Alamdanga Upazila, and Chuadanga Sadar Upazila except Titudaha, Begumpur and Garaitupi Unions"
+80,Chuadanga-2,Chuadanga,Khulna,Urban,"Damurhuda Upazila Jibannagar Upazila and Chuadanga Sadar: Titudaha, Begumpur and Garaitupi Unions All unions under Chuadanga Sadar Upazila except Titudaha, Begumpur, Nehalpur and Goraitupi unions"
+81,Jhenaidah-1,Jhenaidah,Khulna,Rural,"Shailokupa Upazila Titudaha, Begumpur, Nehalpur and Goraitupi unions under Chuadanga Sadar Upazila"
+82,Jhenaidah-2,Jhenaidah,Khulna,Urban,"Jhenaidah Sadar Upazila except Naldanga, Ghorashal, Furshundi, and Maharajpur Unions and Horinakundu Upazila All unions under Jhenaidah Sadar Upazila except Noldanga, Ghorashal, Furshundi and Moharajpur unions"
+83,Jhenaidah-3,Jhenaidah,Khulna,Rural,"Kotchandpur Upazila, and Moheshpur Upazila"
+84,Jhenaidah-4,Jhenaidah,Khulna,Urban,"Kaliganj Upazila, and Four unions under Jhenaidah Sadar Upazila Noldanga, Ghorashal, Furshundi and Moharajpur unions under Jhenaidah Sadar Upazila"
+85,Jessore-1,Jessore,Khulna,Rural,Sharsha Upazila
+86,Jessore-2,Jessore,Khulna,Rural,"Chougachha Upazila, and Jhikargachha Upazila"
+87,Jessore-3,Jessore,Khulna,Urban,Jashore Sadar Upazila except Bashundia Union All unions under Jashore Sadar Upazila except Basundia union
+88,Jessore-4,Jessore,Khulna,Rural,"Bagharpara Upazila, Abhaynagar Upazila and Jashore Sadar: Bashundia Union Basundia union under Jashore Sadar Upazila"
+89,Jessore-5,Jessore,Khulna,Rural,Manirampur Upazila
+90,Jessore-6,Jessore,Khulna,Rural,Keshabpur Upazila
+91,Magura-1,Magura,Khulna,Urban,"Sreepur Upazila, and Magura Sadar except Shatarujitpur, Gopalgram, Kuchiamora, and Berail Palita Unions"
+92,Magura-2,Magura,Khulna,Rural,"Mohammadpur Upazila, and Magura Sadar: Shatarujitpur, Gopalgram, Kuchiamora, and Berail Palita Unions"
+93,Narail-1,Narail,Khulna,Rural,"Kalia Upazila, and Narail Sadar: Kalora, Bichli, Bhadrabila, Singa Solpur, and Sheikh Hati Unions"
+94,Narail-2,Narail,Khulna,Urban,"Lohagara Upazila, and Narail Sadar except Kalora, Bichli, Bhadrabila, Singa Solpur, and Sheikh Hati Unions"
+95,Bagerhat-1,Bagerhat,Khulna,Rural,"Fakirhat Upazila, Mollahat Upazila, and Chitalmari Upazila"
+96,Bagerhat-2,Bagerhat,Khulna,Urban,"Bagerhat Sadar, and Kachua Upazila"
+97,Bagerhat-3,Bagerhat,Khulna,Rural,"Rampal Upazila, and Mongla Upazila"
+98,Bagerhat-4,Bagerhat,Khulna,Rural,"Morelganj Upazila, and Sharankhola Upazila"
+99,Khulna-1,Khulna,Khulna,Rural,"Botiaghata Upazila, and Dakop Upazila"
+100,Khulna-2,Khulna,Khulna,Urban,"Khulna City Corporation Ward No 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31"
+101,Khulna-3,Khulna,Khulna,Urban,"Khulna City Corporation Ward No 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and Dighalia Upazila: Aranghata and Jogipol Unions"
+102,Khulna-4,Khulna,Khulna,Rural,"Digholia Upazila except Aranghata and Jogipol Unions, Rupsha Upazila, and Terkhada Upazila"
+103,Khulna-5,Khulna,Khulna,Rural,"Fultola Upazila, Dumuria Upazila, and Gilatola Cantonment"
+104,Khulna-6,Khulna,Khulna,Rural,"Koyra Upazila, and Paikgacha Upazila"
+105,Satkhira-1,Satkhira,Khulna,Rural,"Kalaroa Upazila, and Tala Upazila"
+106,Satkhira-2,Satkhira,Khulna,Urban,Satkhira Sadar
+107,Satkhira-3,Satkhira,Khulna,Rural,"Assasuni Upazila, Kaliganj Upazila: Champaful, Tarashimla, Tarali and Nalta Unions"
+108,Satkhira-4,Satkhira,Khulna,Rural,"Shyamnagar Upazila, and Kaliganj Upazila except Champaful, Tarashimla, Tarali and Nalta Unions"
+109,Barguna-1,Barguna,Barisal,Urban,"Barguna Sadar, Amtali Upazila, and Taltali Upazila"
+110,Barguna-2,Barguna,Barisal,Rural,"Bamna Upazila, Patharghata Upazila, and Betagi Upazila"
+111,Patuakhali-1,Patuakhali,Barisal,Urban,"Patuakhali Sadar, Mirjaganz Upazila, and Dumki Upazila"
+112,Patuakhali-2,Patuakhali,Barisal,Rural,Baufol Upazila
+113,Patuakhali-3,Patuakhali,Barisal,Rural,"Dashimana Upazila, and Galachipa Upazila"
+114,Patuakhali-4,Patuakhali,Barisal,Rural,"Kalapara Upazila, and Rangabali Upazila"
+115,Bhola-1,Bhola,Barisal,Urban,Bhola Sadar
+116,Bhola-2,Bhola,Barisal,Rural,"Doulatkhan Upazila, and Borhanuddin Upazila"
+117,Bhola-3,Bhola,Barisal,Rural,"Tajumoddin Upazila, and Lalmohan Upazila"
+118,Bhola-4,Bhola,Barisal,Rural,"Monpura Upazila, and Charfashion Upazila"
+119,Barisal-1,Barisal,Barisal,Rural,"Gournadi Upazila, and Agailjhara Upazila"
+120,Barisal-2,Barisal,Barisal,Rural,"Uzirpur Upazila, and Banaripara Upazila"
+121,Barisal-3,Barisal,Barisal,Rural,"Muladi Upazila, and Babuganj Upazila"
+122,Barisal-4,Barisal,Barisal,Rural,"Mehendiganj Upazila, and Hizla Upazila"
+123,Barisal-5,Barisal,Barisal,Urban,"Barishal City Corporation, and Barishal Sadar"
+124,Barisal-6,Barisal,Barisal,Rural,Bakerganj Upazila
+125,Jhalokati-1,Jhalokati,Barisal,Rural,"Rajapur Upazila, and Kathalia Upazila"
+126,Jhalokati-2,Jhalokati,Barisal,Urban,"Jhalokathi Sadar, and Nalcity Upazila"
+127,Pirojpur-1,Pirojpur,Barisal,Urban,"Pirojpur Sadar, Nesarbad Upazila, and Nazirpur Upazila"
+128,Pirojpur-2,Pirojpur,Barisal,Rural,"Kaukhali Upazila, Bhandaria Upazila, and Indurkani Upazila"
+129,Pirojpur-3,Pirojpur,Barisal,Rural,Mathbaria Upazila
+130,Tangail-1,Tangail,Dhaka,Rural,"Madhupur Upazila, and Dhanbari Upazila"
+131,Tangail-2,Tangail,Dhaka,Rural,"Gopalpur Upazila, and Bhuapur Upazila"
+132,Tangail-3,Tangail,Dhaka,Rural,Ghatail Upazila
+133,Tangail-4,Tangail,Dhaka,Rural,Kalihati Upazila
+134,Tangail-5,Tangail,Dhaka,Urban,Tangail Sadar
+135,Tangail-6,Tangail,Dhaka,Rural,"Delduar Upazila, and Nagarpur Upazila"
+136,Tangail-7,Tangail,Dhaka,Rural,Mirzapur Upazila
+137,Tangail-8,Tangail,Dhaka,Rural,"Basail Upazila, and Sakhipur Upazila"
+138,Jamalpur-1,Jamalpur,Mymensingh,Rural,"Bakshiganj Upazila, and Dewanganj Upazila"
+139,Jamalpur-2,Jamalpur,Mymensingh,Rural,Islampur Upazila
+140,Jamalpur-3,Jamalpur,Mymensingh,Rural,"Motherganj Upazila, and Melandaha Upazila"
+141,Jamalpur-4,Jamalpur,Mymensingh,Rural,Sarishabari Upazila
+142,Jamalpur-5,Jamalpur,Mymensingh,Urban,Jamalpur Sadar
+143,Sherpur-1,Sherpur,Mymensingh,Urban,Sherpur Sadar
+144,Sherpur-2,Sherpur,Mymensingh,Rural,"Nakla Upazila, and Nalitabari Upazila"
+145,Sherpur-3,Sherpur,Mymensingh,Rural,"Sreebardi Upazila, and Jhenaigati Upazila"
+146,Mymensingh-1,Mymensingh,Mymensingh,Rural,"Haluaghat Upazila, and Dhobaura Upazila"
+147,Mymensingh-2,Mymensingh,Mymensingh,Rural,"Fulpur Upazila, and Tarakanda Upazila"
+148,Mymensingh-3,Mymensingh,Mymensingh,Rural,Gouripur Upazila
+149,Mymensingh-4,Mymensingh,Mymensingh,Urban,Mymensingh Sadar
+150,Mymensingh-5,Mymensingh,Mymensingh,Rural,Muktagacha Upazila
+151,Mymensingh-6,Mymensingh,Mymensingh,Rural,Fulbaria Upazila
+152,Mymensingh-7,Mymensingh,Mymensingh,Rural,Trishal Upazila
+153,Mymensingh-8,Mymensingh,Mymensingh,Rural,Ishwarganj Upazila
+154,Mymensingh-9,Mymensingh,Mymensingh,Rural,Nandail Upazila
+155,Mymensingh-10,Mymensingh,Mymensingh,Rural,Gafargaon Upazila
+156,Mymensingh-11,Mymensingh,Mymensingh,Rural,Bhaluka Upazila
+157,Netrokona-1,Netrokona,Mymensingh,Rural,"Kalmakanda Upazila, and Durgapur Upazila"
+158,Netrokona-2,Netrokona,Mymensingh,Urban,"Netrokona Sadar, and Barhatta Upazila"
+159,Netrokona-3,Netrokona,Mymensingh,Rural,"Atpara Upazila, and Kendua Upazila"
+160,Netrokona-4,Netrokona,Mymensingh,Rural,"Mohanganj Upazila, Madan Upazila, and Khaliajuri Upazila"
+161,Netrokona-5,Netrokona,Mymensingh,Rural,Purbadhala Upazila
+162,Kishoreganj-1,Kishoreganj,Dhaka,Urban,"Kishoreganj Sadar, and Hossainpur Upazila"
+163,Kishoreganj-2,Kishoreganj,Dhaka,Rural,"Katiadi Upazila, and Pakundia Upazila"
+164,Kishoreganj-3,Kishoreganj,Dhaka,Rural,"Tarail Upazila, and Karimganj Upazila"
+165,Kishoreganj-4,Kishoreganj,Dhaka,Rural,"Itna Upazila, Mithamoin Upazila, and Ashtagram Upazila"
+166,Kishoreganj-5,Kishoreganj,Dhaka,Rural,"Nikli Upazila, and Bazitpur Upazila"
+167,Kishoreganj-6,Kishoreganj,Dhaka,Rural,"Kuliarchar Upazila, and Bhairab Upazila"
+168,Manikganj-1,Manikganj,Dhaka,Rural,"Daulatpur Upazila, Ghior Upazila, and Shibalay Upazila"
+169,Manikganj-2,Manikganj,Dhaka,Rural,"Singair Upazila, Harirampur Upazila, and Manikganj Sadar: Hatipara, Bhararia, and Putail Unions"
+170,Manikganj-3,Manikganj,Dhaka,Urban,"Manikganj Sadar except Hatipara, Bhararia, and Putail Unions, and Saturia Upazila"
+171,Munshiganj-1,Munshiganj,Dhaka,Rural,"Sreenagar Upazila, and Sirajdikhan Upazila"
+172,Munshiganj-2,Munshiganj,Dhaka,Rural,"Louhaganj Upazila, and Tongibari Upazila"
+173,Munshiganj-3,Munshiganj,Dhaka,Urban,"Munshiganj Sadar, and Gazaria Upazila"
+174,Dhaka-1,Dhaka,Dhaka,Rural,"Dohar Upazila, and Nawabganj Upazila"
+175,Dhaka-2,Dhaka,Dhaka,Urban,"Keraniganj Upazila except Jinjira, Agangar, Tegharia, Konda and Shuvatya Unions, Dhaka South City Corporation Ward No 55, 56, 57, and Savar Upazila: Aminbazar, Tetuljhara, and Bhakurta Unions"
+176,Dhaka-3,Dhaka,Dhaka,Urban,"Keraniganj Upazila: Jinjira, Agangar, Tegharia, Konda and Shuvatya Unions"
+177,Dhaka-4,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 47, 51 to 54, 58, 59"
+178,Dhaka-5,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 48 to 50, 60 to 66, 70"
+179,Dhaka-6,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 34, 37 to 46"
+180,Dhaka-7,Dhaka,Dhaka,Urban,Dhaka South City Corporation Wards 23 to 36
+181,Dhaka-8,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 8 to 13, 19 to 21"
+182,Dhaka-9,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 1 to 7, 71 to 75"
+183,Dhaka-10,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 14 to 18, 22"
+184,Dhaka-11,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 21 to 23, 37 to 42"
+185,Dhaka-12,Dhaka,Dhaka,Urban,"Dhaka South City Corporation Wards 24 to 27, 35, 36"
+186,Dhaka-13,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Wards 28, 20, 30 to 34"
+187,Dhaka-14,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Wards 7 to 12, Savar Upazila: Kaundia Union"
+188,Dhaka-15,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Ward No 4, 13, 14, 16"
+189,Dhaka-16,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Ward No 2, 3, 5, 6"
+190,Dhaka-17,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Ward No 15, 18, 19, 20, and Dhaka Cantonment"
+191,Dhaka-18,Dhaka,Dhaka,Urban,"Dhaka North City Corporation Wards 1, 17, 43 to 52, and Dhaka Airport"
+192,Dhaka-19,Dhaka,Dhaka,Urban,"Savar Upazila except Aminbazar, Tetuljhara, Bhakurta, and Kaundia Unions"
+193,Dhaka-20,Dhaka,Dhaka,Rural,Dhamrai Upazila
+194,Gazipur-1,Gazipur,Dhaka,Rural,"Kaliakoir Upazila, and Gazipur City Corporation Wards 1 to 18"
+195,Gazipur-2,Gazipur,Dhaka,Urban,"Gazipur City Corporation Wards 19 to 26, 28 to 38, 43 to 57 Gazipur Cantonment"
+196,Gazipur-3,Gazipur,Dhaka,Rural,"Sreepur Upazila, and Gazipur Sadar: Mirzapur, Bhawal Gar and Pirujali Unions"
+197,Gazipur-4,Gazipur,Dhaka,Rural,Kapasia Upazila
+198,Gazipur-5,Gazipur,Dhaka,Rural,"Kaliganj Upazila, Gazipur City Corporation Wards 39 to 42, and Gazipur Sadar: Baria Union"
+199,Narsingdi-1,Narsingdi,Dhaka,Urban,"Narsingdi Sadar except Amadia, Panchdona and Meherpara Unions"
+200,Narsingdi-2,Narsingdi,Dhaka,Rural,"Palash Upazila, and Narsinghdi Sadar: Amadia, Panchdona, and Meherpara Unions"
+201,Narsingdi-3,Narsingdi,Dhaka,Rural,Shibpur Upazila
+202,Narsingdi-4,Narsingdi,Dhaka,Rural,"Monohardi Upazila, and Belabo Upazila"
+203,Narsingdi-5,Narsingdi,Dhaka,Rural,Raipura Upazila
+204,Narayanganj-1,Narayanganj,Dhaka,Urban,Rupganj Upazila
+205,Narayanganj-2,Narayanganj,Dhaka,Rural,Araihazar Upazila
+206,Narayanganj-3,Narayanganj,Dhaka,Urban,Sonargaon Upazila
+207,Narayanganj-4,Narayanganj,Dhaka,Urban,"Narayanganj Sadar except Alirtek and Gognagar Unions, and Narayanganj"
+208,Narayanganj-5,Narayanganj,Dhaka,Urban,"Narayanganj City Corporation Wards 11 to 23, and 27, Bandar Upazila, and Narayanganj Sadar: Alirtek and Gogonnagar Unions"
+209,Rajbari-1,Rajbari,Dhaka,Urban,"Rajbari Sadar, and Goalanda Upazila"
+210,Rajbari-2,Rajbari,Dhaka,Rural,"Pangsha Upazila, Kalukhali Upazila, and Baliakandi Upazila"
+211,Faridpur-1,Faridpur,Dhaka,Rural,"Madhukhali Upazila, Boalmari Upazila, and Alfadanga Upazila"
+212,Faridpur-2,Faridpur,Dhaka,Rural,"Nagarkanda Upazila, Saltha Upazila, and Sadarpur Upazila: Krishnapur Union"
+213,Faridpur-3,Faridpur,Dhaka,Urban,Faridpur Sadar
+214,Faridpur-4,Faridpur,Dhaka,Rural,"Bhanga Upazila, Charbhadrashan Upazila, and Sadarpur Upazila except Krishnapur Union"
+215,Gopalganj-1,Gopalganj,Dhaka,Rural,"Maksudpur Upazila, and Kashiani Upazila except Singa, Hatiara, Puishur, Bethuri, Nizamkandi, Orakandi and Fukra Unions"
+216,Gopalganj-2,Gopalganj,Dhaka,Urban,"Gopalganj Sadar, and Kashiani Upazila: Singa, Hatiara, Puishur, Bethuri, Nizamkandi, Orakandi and Fukra Unions"
+217,Gopalganj-3,Gopalganj,Dhaka,Rural,"Tungipara Upazila, and Kotalipara Upazila"
+218,Madaripur-1,Madaripur,Dhaka,Rural,Shibchar Upazila
+219,Madaripur-2,Madaripur,Dhaka,Urban,"Rajoir Upazila, Madaripur Sadar except Khowazpur, Jhaudi, Ghtmaji, Mostafapur, and Kendua Unions"
+220,Madaripur-3,Madaripur,Dhaka,Rural,"Kalkini Upazila, Madaripur Sadar: Khowajpur, Jhaudi, Ghtmaji, Mostafapur, and Kendua Unions"
+221,Shariatpur-1,Shariatpur,Dhaka,Urban,"Shariatpur Sadar, and Jazira Upazila"
+222,Shariatpur-2,Shariatpur,Dhaka,Rural,"Naria Upazila, Bhedorganj Upazila: Chaigaon, Mahishar, Narayanpur, Rambhadrapur and Bhedorganj municipalities"
+223,Shariatpur-3,Shariatpur,Dhaka,Rural,"Damuddya Upazila, Goshairhat Upazila, and Bhedorganj Upazila except Chaigaon, Mahishar, Narayanpur, Rambhadrapur and Bhedorganj municipalities"
+224,Sunamganj-1,Sunamganj,Sylhet,Rural,"Dharmapasha Upazila, Tahirpur Upazila, and Jamalganj Upazila"
+225,Sunamganj-2,Sunamganj,Sylhet,Rural,"Dirai Upazila, and Shalla Upazila"
+226,Sunamganj-3,Sunamganj,Sylhet,Rural,"Jagannathpur Upazila, and South Sunamganj Upazila"
+227,Sunamganj-4,Sunamganj,Sylhet,Urban,"Sunamganj Sadar, and Biswamvarpur Upazila"
+228,Sunamganj-5,Sunamganj,Sylhet,Rural,"Chatak Upazila, and Doarabazar Upazila"
+229,Sylhet-1,Sylhet,Sylhet,Urban,"Sylhet City Corporation, and Sylhet Sadar"
+230,Sylhet-2,Sylhet,Sylhet,Rural,"Bishwanath Upazila, and Osmani Nagar Upazila"
+231,Sylhet-3,Sylhet,Sylhet,Rural,"Dakshin Surma Upazila, Fenchuganj Upazila, and Balaganj Upazila"
+232,Sylhet-4,Sylhet,Sylhet,Rural,"Companiganj Upazila, Gowainghat Upazila, and Jointapur Upazila"
+233,Sylhet-5,Sylhet,Sylhet,Rural,"Kanaighat Upazila, and Zakiganj Upazila"
+234,Sylhet-6,Sylhet,Sylhet,Rural,"Beanibazar Upazila, and Golapganj Upazila"
+235,Moulvibazar-1,Moulvibazar,Sylhet,Rural,"Barlekha Upazila, and Juri Upazila"
+236,Moulvibazar-2,Moulvibazar,Sylhet,Rural,Kulaura Upazila
+237,Moulvibazar-3,Moulvibazar,Sylhet,Urban,"Moulvibazar Sadar, and Rajnagar Upazila"
+238,Moulvibazar-4,Moulvibazar,Sylhet,Rural,"Sreemangal Upazila, and Kamalganj Upazila"
+239,Habiganj-1,Habiganj,Sylhet,Rural,"Nabiganj Upazila, and Bahubal Upazila"
+240,Habiganj-2,Habiganj,Sylhet,Rural,"Ajmiriganj Upazila, and Baniachong Upazila"
+241,Habiganj-3,Habiganj,Sylhet,Urban,"Habiganj Sadar, Lakhai Upazila, and Shayestaganj Upazila"
+242,Habiganj-4,Habiganj,Sylhet,Rural,"Chunarughat Upazila, and Madhabpur Upazila"
+243,Brahmanbaria-1,Brahmanbaria,Chittagong,Rural,Nasirnagar Upazila
+244,Brahmanbaria-2,Brahmanbaria,Chittagong,Rural,"Sarail Upazila, Ashuganj Upazila"
+245,Brahmanbaria-3,Brahmanbaria,Chittagong,Urban,"Brahmanbaria Sadar, and Bijoynagar Upazila"
+246,Brahmanbaria-4,Brahmanbaria,Chittagong,Rural,"Akhaura Upazila, Kasba Upazila"
+247,Brahmanbaria-5,Brahmanbaria,Chittagong,Rural,Nabinagar Upazila
+248,Brahmanbaria-6,Brahmanbaria,Chittagong,Rural,Bancharampur Upazila
+249,Comilla-1,Comilla,Chittagong,Rural,"Daudkandi Upazila, and Meghna Upazila"
+250,Comilla-2,Comilla,Chittagong,Rural,"Homna Upazila, and Titas Upazila"
+251,Comilla-3,Comilla,Chittagong,Rural,Muradnagar Upazila
+252,Comilla-4,Comilla,Chittagong,Rural,Debidwar Upazila
+253,Comilla-5,Comilla,Chittagong,Rural,"Brahmanpara Upazila, and Burichang Upazila"
+254,Comilla-6,Comilla,Chittagong,Urban,"Cumilla Adarsha Sadar, Cumilla City Corporation, and Cumilla Cantonment"
+255,Comilla-7,Comilla,Chittagong,Rural,Chandina Upazila
+256,Comilla-8,Comilla,Chittagong,Rural,Barura Upazila
+257,Comilla-9,Comilla,Chittagong,Rural,"Laksham Upazila, and Monoharganj Upazila"
+258,Comilla-10,Comilla,Chittagong,Urban,"Cumilla Sadar South, Lalmai Upazila, and Nangalkot Upazila"
+259,Comilla-11,Comilla,Chittagong,Rural,Chauddagram Upazila
+260,Chandpur-1,Chandpur,Chittagong,Rural,Kachua Upazila
+261,Chandpur-2,Chandpur,Chittagong,Rural,"Matlab North Upazila, and Matlab South Upazila"
+262,Chandpur-3,Chandpur,Chittagong,Urban,"Chandpur Sadar, and Haimchar Upazila"
+263,Chandpur-4,Chandpur,Chittagong,Rural,Faridganz Upazila
+264,Chandpur-5,Chandpur,Chittagong,Rural,"Haziganz Upazila, Shaharasti Upazila"
+265,Feni-1,Feni,Chittagong,Rural,"Parshuram Upazila, Chagalnaiya Upazila, and Fulgazhi Upazila"
+266,Feni-2,Feni,Chittagong,Urban,Feni Sadar
+267,Feni-3,Feni,Chittagong,Rural,"Sonagazi Upazila, and Daganbhuiyan Upazila"
+268,Noakhali-1,Noakhali,Chittagong,Rural,"Chatkhil Upazila, Sonaimuri Upazila except Bargaon, Nateshwar, and Ambar Nagar Unions"
+269,Noakhali-2,Noakhali,Chittagong,Rural,"Senbag, Sonaimuri Upazila: Bargaon, Nateshwar, and Ambar Nagar Unions"
+270,Noakhali-3,Noakhali,Chittagong,Rural,Begumganj Upazila
+271,Noakhali-4,Noakhali,Chittagong,Urban,"Subarna Char Upazila, and Noakhali Sadar"
+272,Noakhali-5,Noakhali,Chittagong,Rural,"Companyganj Upazila, and Kabirhat Upazila"
+273,Noakhali-6,Noakhali,Chittagong,Rural,Hatia Upazila
+274,Lakshmipur-1,Lakshmipur,Chittagong,Rural,Ramganj Upazila
+275,Lakshmipur-2,Lakshmipur,Chittagong,Rural,"Raipur Upazila, and North Hamsadi, South Hamsadi, Dalal Bazar, Char Ruhita, Parbati Nagar, Shakchar, Tumchar, Char Ramanimohan, and Bakshipur"
+276,Lakshmipur-3,Lakshmipur,Chittagong,Urban,"Laxmipur Sadar except: North Hamsadi, South Hamsadi, Dalal Bazar, Char Ruhita, Parbati Nagar, Shakchar, Tumchar, Char Ramanimohan, and Bakshipur"
+277,Lakshmipur-4,Lakshmipur,Chittagong,Rural,Ramgari Upazila and Kamalnagar Upazila
+278,Chittagong-1,Chittagong,Chittagong,Rural,Mirshari Upazila
+279,Chittagong-2,Chittagong,Chittagong,Rural,Fatikchhari Upazila
+280,Chittagong-3,Chittagong,Chittagong,Rural,Swandwip Upazila
+281,Chittagong-4,Chittagong,Chittagong,Rural,"Sitakundu, Chittagong City Corporation Ward 9, and Chittagong City Corporation Ward 10"
+282,Chittagong-5,Chittagong,Chittagong,Rural,"Chittagong City Corporation Ward No. 1, 2"
+283,Chittagong-6,Chittagong,Chittagong,Rural,Rauzan Upazila
+284,Chittagong-7,Chittagong,Chittagong,Rural,"Rangunia Upazila, Boalkhali Upazila: Sreepur & Kharandwip"
+285,Chittagong-8,Chittagong,Chittagong,Rural,"Chittagong City Corporation Ward No. 3, 4, 5, 6, 7, and Boalkhali Upazila except Sreepur and Kharandwip"
+286,Chittagong-9,Chittagong,Chittagong,Urban,"Chattogram City Corporation Ward No. 15, 15, 17, 18, 19, 20,21, 22, 23, 31, 32, 33, 34, 35"
+287,Chittagong-10,Chittagong,Chittagong,Urban,"Chattogram City Corporation Ward No. 08, 11, 12,13, 14, 24, 25, 26"
+288,Chittagong-11,Chittagong,Chittagong,Urban,"Chattogram City Corporation Ward No. 27, 28, 29, 30, 36, 37, 38, 39, 40, 41"
+289,Chittagong-12,Chittagong,Chittagong,Rural,Patiya Upazila
+290,Chittagong-13,Chittagong,Chittagong,Rural,Anwara Upazila and Karnaphuli Upazila
+291,Chittagong-14,Chittagong,Chittagong,Rural,"Chandanaish Upazila and The following unions under Saatkania Upazila: a) Keochiya, b) Kaliaish, c) Bajalia, d) Dharmapur, e) Puranagar and f) Khagria"
+292,Chittagong-15,Chittagong,Chittagong,Rural,"Lohagora Upazila and Saatkania Upazila except the following unions: a) Keochiya, b) Kaliaish, c) Bajalia, d) Dharmapur, e) Puranagar and f) Khagria"
+293,Chittagong-16,Chittagong,Chittagong,Rural,Banshkhali Upazila
+294,Cox's Bazar-1,Cox's Bazar,Chittagong,Rural,Chakaria Upazila and Pekua Upazila
+295,Cox's Bazar-2,Cox's Bazar,Chittagong,Rural,Kutubdiya Upazila and Maheshkhali Upazila
+296,Cox's Bazar-3,Cox's Bazar,Chittagong,Urban,Cox's Bazar Sadar Upazila and Ramu Upazila
+297,Cox's Bazar-4,Cox's Bazar,Chittagong,Rural,Ukhiya Upazila and Teknaf Upazila
+298,Khagrachari,Khagrachari,Chittagong,Rural,Mahalchhari Lakshmichhari Khagrachhari Dighinala Panchhari Maatiranga Manikchhari Laxmichhari Ramgarh and Guimara
+299,Rangamati,Rangamati,Chittagong,Rural,Rangamati Hill Tracts district
+300,Bandarban,Bandarban,Chittagong,Rural,Bandarban Hill Tracts district
