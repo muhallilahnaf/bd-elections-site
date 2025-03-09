@@ -1,9 +1,10 @@
 <script>
     import PageHeading from "$lib/components/PageHeading.svelte";
 	import seatsDataStore from "$lib/store/seatsData.svelte.js";
-    import {toTitleCase} from '$lib/helper.js'
+    import {toTitleCase, readCSV} from '$lib/helper.js'
 	import BackButton from "$lib/components/BackButton.svelte";
     import SeatTable from "$lib/components/SeatTable.svelte";
+    import { onMount } from "svelte";
 
     let { data } = $props();
     
@@ -14,15 +15,25 @@
     let subheading = $derived(targetSeat.seat_areas)
 
     // display seat year-wise details
-    const targetSeatSummary = data.targetSeatSummary;
+    let targetSeatSummary = $state([])
     const seatSummaryCols = ['year', 'turnout', 'turnout_pc', 'voters', 'male_voters', 'female_voters', 'centers']
 
     // display seat year-wise details
-    const targetSeatResults = data.targetSeatResults;
+    let targetSeatResults = $state([])
     const seatResultCols = ['year', 'party', 'name', 'votes', 'votes_pc', 'winner']
 
-    const summaryHeading = slug + 'year-wise data'
-    const resultsHeading = slug + 'candidate data'
+    onMount(async () => {
+         const seatSummaryLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/seat_summary.csv'
+         const seatSummary = await readCSV(seatSummaryLink);
+         targetSeatSummary = seatSummary.filter(s => s.seat == targetSeat.seat);
+         const seatResultLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/candidate_result.csv'
+         const seatResult = await readCSV(seatResultLink);
+         targetSeatResults = seatResult.filter(s => s.seat == targetSeat.seat);
+         targetSeatResults.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+    })
+
+    const summaryHeading = slug + ' year-wise data'
+    const resultsHeading = slug + ' candidate data'
 
 </script>
 
