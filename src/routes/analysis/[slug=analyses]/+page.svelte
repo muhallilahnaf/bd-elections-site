@@ -29,7 +29,7 @@
 			{:else if section.type === 'figure'}
 				<AnalysisFigureSection {section} folder={analysisData.figure_folder_url} />
 			{:else if section.type === 'map'}
-				<AnalysisMapSection {section} folder={analysisData.map_folder_url} />
+				<!-- <AnalysisMapSection {section} folder={analysisData.map_folder_url} /> -->
 			{/if}
 		</div>
 	{/each}

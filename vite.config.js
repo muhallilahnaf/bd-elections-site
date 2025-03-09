@@ -11,7 +11,8 @@ const fetchAssets = (command) => ({
     buildStart: async () => {
 		if (command == 'build') {
 			// folders
-			const folderNames = ['data', 'dataout', 'mapout']
+			// const folderNames = ['data', 'dataout', 'mapout']
+			const folderNames = ['data', 'dataout']
 
 			// create folders if not exist
 			folderNames.forEach(name => {

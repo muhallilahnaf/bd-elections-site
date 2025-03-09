@@ -1,5 +1,6 @@
 <script>
 	import analysisData from '$lib/data/analysisItems.json';
+    import seats from '$lib/data/seats.json';
 </script>
 
 
@@ -19,6 +20,13 @@
                 </a>
             {/each}
         </div>
+        <div id="secret">
+            {#each seats as s}
+            <div>
+                <a href={"/kys/seat-details/" + s}>{s}</a>
+            </div>
+            {/each}
+        </div>
     </div>
 </div>
 
@@ -32,5 +40,8 @@
 	}
     .card {
         margin-bottom: 4rem !important;
+    }
+    #secret {
+        display: none;
     }
 </style>
