@@ -1,6 +1,9 @@
 <script>
-	import analysisData from '$lib/data/analysisItems.json';
     import seats from '$lib/data/seats.json';
+    let { 
+        analysisData = [],
+        path = '', 
+    } = $props();
 </script>
 
 
@@ -9,7 +12,7 @@
     <div class="ui basic segment">
         <div class="ui four stackable cards">
             {#each analysisData as item}
-                <a class="ui card" href={'/analysis/' + item.slug}>
+                <a class="ui card" href={path + '/' + item.slug}>
                     <img class="image" src={`${item.figure_folder_url}${item.thumb}`} alt={item.thumb} />
                     <div class="content">
                         <h2 class="header">{item.title}</h2>

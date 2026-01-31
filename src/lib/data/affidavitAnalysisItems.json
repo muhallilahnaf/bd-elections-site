@@ -1,0 +1,154 @@
+[
+    {
+        "slug": "income_wealth_distn",
+        "title": "Net income and net wealth distribution",
+        "description": "We visualize the net income and net wealth distributions of 2026 general election candidates.",
+        "thumb": "affidavit_income_distn_iqr.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/affidavit_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "affidavit_income_distn_iqr.png",
+                "description": "Distribution of the net income in between Q1 and Q3 (inter quantile range).",
+                "discussion": "Most candidates have a net income of 4-7 lacs per annum."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_distn_iqr.png",
+                "description": "Distribution of the net wealth in between Q1 and Q3 (inter quantile range).",
+                "discussion": "Most candidates have a net wealth of 30-80 lacs."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_med.png",
+                "description": "Map highlighting the median net wealth of the candidates of each seat. Seats with darker shades have candidates with higher net worth on average.",
+                "discussion": "This visualizes which seats have wealthier candidates."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_med_by_division.png",
+                "description": "Map highlighting the median net wealth of the candidates of each division. Divisions with darker shades have candidates with higher net worth on average.",
+                "discussion": "Eastern regions have relatively high number of wealthy candidates."
+            }
+        ]
+    },
+    {
+        "slug": "income_wealth_comparison",
+        "title": "Net income and net wealth comparison",
+        "description": "We compare the net income and net wealth of 2026 general election candidates.",
+        "thumb": "affidavit_comparison_top_wealth_income_tax.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/affidavit_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "affidavit_comparison_top_wealth_income_tax.png",
+                "description": "Comparison of the median income, wealth and tax paid between group of candidates with top income, top wealth or top taxpayer.",
+                "discussion": "Group of wealthiest candidates have the lowest median income."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_comparison_final_not_wealth_income_tax.png",
+                "description": "Comparison of the median income, wealth and tax paid between group of candidates who are finalized and rejected.",
+                "discussion": "Rejected candidates have higher median wealth and income."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_income_perc_on_wealth.png",
+                "description": "Distribution of the percentage of income out of net wealth of each candidate.",
+                "discussion": "Most candidates have shown 10-30% of their net wealth as net income from the last year."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_top20_vs_rest.png",
+                "description": "Comparison of the median income, wealth and tax paid between group of wealthiest and not wealthiest candidates.",
+                "discussion": "The gap between median income and tax paid between the two groups is not as big as the gap between median wealth."
+            }
+        ]
+    },
+    {
+        "slug": "party_wise_comparison",
+        "title": "Party wise net income and net wealth comparison",
+        "description": "We compare the net income and net wealth of 2026 general election candidates between major parties.",
+        "thumb": "affidavit_wealth_distn_by_party.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/affidavit_party_distn.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_distn_by_party.png",
+                "description": "Comparison of the net wealth distribution of major parties.",
+                "discussion": "BNP candidates have relatively higher net worth compared to other parties, while Jamat candidates have the lowest net worth."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_wealth_top_by_district.png",
+                "description": "Map visualizing the party with highest net worth candidate in each district.",
+                "discussion": "A lot of western districts have Jamat candidates as the wealthiest, who in turn have relatively low net wealth compared to other parties. This coincides with the fact that most western seats have candidates with lower median net wealth."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_tax_perc_by_party.png",
+                "description": "Distribution of the percentage of tax paid out of net income of candidates of major parties.",
+                "discussion": "BNP candidates have paid relatively higher % of tax out of net income, whereas JaPa candidates have paid relatively lower."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_comparison_wealth_income_tax_by_party.png",
+                "description": "Comparison of the median income, wealth and tax paid between major parties.",
+                "discussion": "BNP has the highest median wealth by a long shot, and other parties share a common median. NCP has relatively high median income compared to other parties (except BNP)."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_income_perc_by_party.png",
+                "description": "Distribution of the percentage of net income out of total wealth of major parties.",
+                "discussion": "NCP has relatively high % of the income paid as tax compared to other parties."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_party_final_not_final_mainp.png",
+                "description": "Percentage of rejections among major parties.",
+                "discussion": "Independent candidates have the highest % of rejections/cancellations, followed by NCP."
+            }
+        ]
+    },
+    {
+        "slug": "tax_analysis",
+        "title": "Income tax analysis",
+        "description": "We analyze the income tax paid by the 2026 general election candidates.",
+        "thumb": "affidavit_tax_med_comparison.png",
+        "notebook_url": "https://github.com/muhallilahnaf/bd-elections-eda/blob/master/affidavit_tax.ipynb",
+        "data_folder_url": "/dataout/",
+        "figure_folder_url": "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/",
+        "map_folder_url": "/mapout/",
+        "sections": [
+            {
+                "type": "figure",
+                "file_name": "affidavit_tax_distn_iqr.png",
+                "description": "Distribution of the income tax paid in between Q1 and Q3 (inter quantile range).",
+                "discussion": "Most candidates pay BDT 3-10 thousand tax."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_tax_perc_on_income.png",
+                "description": "Histogram visualizing the percentage of income paid as tax.",
+                "discussion": "Most candidates pay roughly 5% of their income as tax."
+            },
+            {
+                "type": "figure",
+                "file_name": "affidavit_tax_med_comparison.png",
+                "description": "Comparison of the median income, wealth and tax paid between groups of regular and irregular taxpayers (irregular=tax amount has high deviation from the tax amount calculated from net income).",
+                "discussion": "Irregular taxpayers have quite high wealth and net income when compared to the regular taxpayers."
+            }
+        ]
+    }
+]
+
+

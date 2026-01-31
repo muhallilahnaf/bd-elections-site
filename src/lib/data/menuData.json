@@ -30,5 +30,13 @@
 		"subtitle": "Detailed info of your electoral seat/constituency.",
 		"img_src": "/ss/ss_kys.png",
 		"img_alt": "know your seat menu"
+    },
+    {
+        "title": "Affidavit",
+        "href": "/affidavit",
+        "icon": "dollar sign",
+		"subtitle": "Affidavit data on 2026 general election candidates.",
+		"img_src": "/ss/ss_affidavit.png",
+		"img_alt": "affidavit menu"
     }
 ]

@@ -2,16 +2,16 @@
     import AnalysisCards from '$lib/components/AnalysisCards.svelte';
     import PageHeading from '$lib/components/PageHeading.svelte';
 	import menuData from '$lib/data/menuData.json';
-	import analysisData from '$lib/data/analysisItems.json';
+	import analysisData from '$lib/data/affidavitAnalysisItems.json';
 
-	// get heading, subheading for analysis page
-	const path = '/analysis';
+	// get heading, subheading for affidavit page
+	const path = '/affidavit';
 	const dataItem = menuData.find((item) => item.href == path);
 	const heading = dataItem.title;
 	const subheading = dataItem.subtitle;
 </script>
 
-<!-- /analysis page -->
+<!-- /affidavit page -->
  
 <PageHeading {heading} {subheading} />
 

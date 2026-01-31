@@ -22,18 +22,28 @@
     let targetSeatResults = $state([])
     const seatResultCols = ['year', 'party', 'name', 'votes', 'votes_pc', 'winner']
 
+    // display seat affidavit details
+    let targetSeatAffidavit = $state([])
+    const seatAffidavitCols = ['name_bn', 'father', 'mother', 'income', 'tax', 'wealth', 'party', 'final', 'symbol']
+
+
     onMount(async () => {
-         const seatSummaryLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/seat_summary.csv'
-         const seatSummary = await readCSV(seatSummaryLink);
-         targetSeatSummary = seatSummary.filter(s => s.seat == targetSeat.seat);
-         const seatResultLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/candidate_result.csv'
-         const seatResult = await readCSV(seatResultLink);
-         targetSeatResults = seatResult.filter(s => s.seat == targetSeat.seat);
-         targetSeatResults.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+        const seatSummaryLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/seat_summary.csv'
+        const seatSummary = await readCSV(seatSummaryLink);
+        targetSeatSummary = seatSummary.filter(s => s.seat == targetSeat.seat);
+        const seatResultLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/candidate_result.csv'
+        const seatResult = await readCSV(seatResultLink);
+        targetSeatResults = seatResult.filter(s => s.seat == targetSeat.seat);
+        targetSeatResults.sort((a, b) => parseInt(a.year) - parseInt(b.year));
+        // affidavit
+        const seatAffidavitLink = 'https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/data/affidavit.csv'
+        const seatAffidavit = await readCSV(seatAffidavitLink);
+        targetSeatAffidavit = seatAffidavit.filter(s => s.constituencyID == targetSeat.seat_no);
     })
 
     const summaryHeading = slug + ' year-wise data'
     const resultsHeading = slug + ' candidate data'
+    const affidavitHeading = slug + ' affidavit data'
 
 </script>
 
@@ -57,4 +67,7 @@
 
     <!-- candidate data -->
     <SeatTable heading={resultsHeading} rows={targetSeatResults} cols={seatResultCols} />
+
+    <!-- affidavit data -->
+    <SeatTable heading={affidavitHeading} rows={targetSeatAffidavit} cols={seatAffidavitCols} />
 </div>
