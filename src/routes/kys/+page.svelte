@@ -46,6 +46,16 @@
 	let headers = []
 	let table
 	const colWithSelectFilter = ['District', 'Division', 'Region']
+	let selectedDivision = $state(undefined)
+	let divisions = $state([])
+	let selectedDistrict = $state(undefined)
+	let districtsWithinDivision = $derived(
+		getDistrictsWithinDivision(selectedDivision, seatsDataStore.seatsData)
+	)
+	let seatsWithinDistrict = $derived(
+		getSeatsWithinDistrict(selectedDistrict, seatsDataStore.seatsData)
+	)
+
 
 	const renderTable = (seatsData) => {
 		if (!browser) return
@@ -56,7 +66,41 @@
 
 	$effect(() => {
 		renderTable(seatsDataStore.seatsData)
+		divisions = getDivisions(seatsDataStore.seatsData)
 	})
+
+	// get list of divisions
+	const getDivisions = (seatsData) => {
+		let divisions = []
+		seatsData.forEach(s => {
+			if (!divisions.includes(s.division)) {
+				divisions.push(s.division)
+			}
+		})
+		return divisions
+	}
+
+	// get list of districts within selected division
+	const getDistrictsWithinDivision = (selectedDivision, seatsData) => {
+		let districts = []
+		seatsData.forEach(s => {
+			if (s.division == selectedDivision && !districts.includes(s.district)) {
+				districts.push(s.district)
+			}
+		})
+		return districts
+	}
+
+	// get list of seats within selected district
+	const getSeatsWithinDistrict = (selectedDistrict, seatsData) => {
+		let seats = []
+		seatsData.forEach(s => {
+			if (s.district == selectedDistrict) {
+				seats.push(s.seat)
+			}
+		})
+		return seats
+	}
 
 	// create table body html string
 	const getTableBodyHtml = () => {
@@ -104,6 +148,34 @@
 
 <div class="ui container">
 	<div class="ui basic segment">
+		<!-- dropdowns -->
+		<div class="ui basic segment">
+			<select class="ui selection dropdown" bind:value={selectedDivision}>
+				<option value={undefined} disabled selected>Select a division</option>
+				{#each divisions as division}
+    				<option value={division}>{division}</option>
+				{/each}
+			</select>
+			{#if selectedDivision}
+			<select class="ui selection dropdown" bind:value={selectedDistrict}>
+				<option value={undefined} disabled selected>Select a district</option>
+				{#each districtsWithinDivision as district}
+					<option value={district}>{district}</option>
+				{/each}
+			</select>
+			{/if}
+		</div>
+		<div class="ui vertically fitted basic segment">
+			<div class="ui list">
+				{#each seatsWithinDistrict as seat}
+					<div class="item">
+						<div class="content">
+							<a href={"/kys/seat-details/" + encodeURI(seat)}>{seat}</a>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
 
 		<!-- message box with link to search options -->
 		<div class="ui padded basic segment">
@@ -131,5 +203,8 @@
 <style>
 	.buttons button{
 		margin: 0.5rem;
+	}
+	select {
+		margin-right: 2rem;
 	}
 </style>

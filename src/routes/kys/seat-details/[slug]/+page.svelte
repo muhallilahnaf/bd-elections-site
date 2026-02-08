@@ -4,6 +4,7 @@
     import {toTitleCase, readCSV} from '$lib/helper.js'
 	import BackButton from "$lib/components/BackButton.svelte";
     import SeatTable from "$lib/components/SeatTable.svelte";
+    import WinnerCard from "$lib/components/WinnerCard.svelte";
     import { onMount } from "svelte";
 
     let { data } = $props();
@@ -21,6 +22,16 @@
     // display seat year-wise details
     let targetSeatResults = $state([])
     const seatResultCols = ['year', 'party', 'name', 'votes', 'votes_pc', 'winner']
+
+    // winner details
+    let targetSeatWinners = $derived(
+        targetSeatResults.filter(
+            r => r.winner == 'yes'
+        ).toSorted(
+            (a, b)=> parseInt(a.year) - parseInt(b.year)
+        )
+    )
+
 
     // display seat affidavit details
     let targetSeatAffidavit = $state([])
@@ -60,6 +71,16 @@
                 <b>{toTitleCase(key.replace('_', ' '))}</b><span>:&nbsp;</span><span>{targetSeat[key]}</span>
             </p>
         {/each}
+    </div>
+
+    <!-- winner cards -->
+    <div class="ui basic very padded segment">
+        <h3>Winners</h3>
+        <div class="ui four stackable cards">
+            {#each targetSeatWinners as winner}
+                <WinnerCard winner={winner} />
+            {/each}
+        </div>
     </div>
 
     <!-- year-wise data -->

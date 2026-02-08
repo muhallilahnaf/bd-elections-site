@@ -38,5 +38,13 @@
 		"subtitle": "Affidavit data on 2026 general election candidates.",
 		"img_src": "/ss/ss_affidavit.png",
 		"img_alt": "affidavit menu"
+    },
+    {
+        "title": "Election 2026",
+        "href": "/election_2026",
+        "icon": "poll",
+		"subtitle": "13th general election, 2026.",
+		"img_src": "/ss/ss_affidavit.png",
+		"img_alt": "election 2026 menu"
     }
 ]
