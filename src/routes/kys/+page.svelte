@@ -42,6 +42,31 @@
 		`
 	}
 
+
+	// get list of districts within selected division
+	const getDistrictsWithinDivision = (selectedDivision, seatsData) => {
+		let districts = []
+		seatsData.forEach(s => {
+			if (s.division == selectedDivision && !districts.includes(s.district)) {
+				districts.push(s.district)
+			}
+		})
+		return districts
+	}
+
+	
+	// get list of seats within selected district
+	const getSeatsWithinDistrict = (selectedDistrict, seatsData) => {
+		let seats = []
+		seatsData.forEach(s => {
+			if (s.district == selectedDistrict) {
+				seats.push(s.seat)
+			}
+		})
+		return seats
+	}
+
+
 	// display results
 	let headers = []
 	let table
@@ -80,27 +105,6 @@
 		return divisions
 	}
 
-	// get list of districts within selected division
-	const getDistrictsWithinDivision = (selectedDivision, seatsData) => {
-		let districts = []
-		seatsData.forEach(s => {
-			if (s.division == selectedDivision && !districts.includes(s.district)) {
-				districts.push(s.district)
-			}
-		})
-		return districts
-	}
-
-	// get list of seats within selected district
-	const getSeatsWithinDistrict = (selectedDistrict, seatsData) => {
-		let seats = []
-		seatsData.forEach(s => {
-			if (s.district == selectedDistrict) {
-				seats.push(s.seat)
-			}
-		})
-		return seats
-	}
 
 	// create table body html string
 	const getTableBodyHtml = () => {

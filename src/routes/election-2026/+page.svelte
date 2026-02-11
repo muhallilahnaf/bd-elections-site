@@ -7,10 +7,34 @@
 
 
     // get heading, subheading for election 2026 page
-	const path = '/election_2026';
+	const path = '/election-2026';
 	const dataItem = menuData.find((item) => item.href == path);
 	const heading = dataItem.title;
 	const subheading = dataItem.subtitle;
+
+
+	// get list of districts within selected division
+	const getDistrictsWithinDivision = (selectedDivision, seatsData) => {
+		let districts = []
+		seatsData.forEach(s => {
+			if (s.division == selectedDivision && !districts.includes(s.district)) {
+				districts.push(s.district)
+			}
+		})
+		return districts
+	}
+
+
+    // get list of seats within selected district
+	const getSeatsWithinDistrict = (selectedDistrict, seatsData) => {
+		let seats = []
+		seatsData.forEach(s => {
+			if (s.district == selectedDistrict) {
+				seats.push(s.seat)
+			}
+		})
+		return seats
+	}
 
 
     let selectedDivision = $state(undefined)
@@ -23,7 +47,6 @@
 		getSeatsWithinDistrict(selectedDistrict, seatsDataStore.seatsData)
 	)
     let selectedSeat = $state(undefined)
-
 
 
     $effect(() => {
@@ -41,37 +64,10 @@
 		})
 		return divisions
 	}
-
-	// get list of districts within selected division
-	const getDistrictsWithinDivision = (selectedDivision, seatsData) => {
-		let districts = []
-		seatsData.forEach(s => {
-			if (s.division == selectedDivision && !districts.includes(s.district)) {
-				districts.push(s.district)
-			}
-		})
-		return districts
-	}
-
-    // get list of seats within selected district
-	const getSeatsWithinDistrict = (selectedDistrict, seatsData) => {
-		let seats = []
-		seatsData.forEach(s => {
-			if (s.district == selectedDistrict) {
-				seats.push(s.seat)
-			}
-		})
-		return seats
-	}
-
-
-
-
-
 </script>
 
 
-<!-- /election_2026 page -->
+<!-- /election-2026 page -->
 <PageHeading {heading} {subheading} />
 
 <div class="ui container">
