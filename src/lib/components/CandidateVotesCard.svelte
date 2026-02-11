@@ -2,7 +2,6 @@
     let {
         candidate = {
             name: '',
-            src: '',
             party: '',
             name_bn: '',
             seat_no: '',
@@ -10,7 +9,9 @@
             alliance: '',
             seat: '',
             district: '',
-            division: ''
+            division: '',
+            votes: '',
+            vote_pc: ''
         }
     } = $props();
     const folder = "https://raw.githubusercontent.com/muhallilahnaf/bd-elections-eda/master/fig/static/candidate/"

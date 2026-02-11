@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import seatsDataStore from '$lib/store/seatsData.svelte';
+	import candidatesDataStore from '$lib/store/candidatesData.svelte';
 	import {readCSV} from '$lib/helper'
 
 	onMount(async () => {
@@ -12,13 +13,18 @@
 		window.$('.ui.dropdown').dropdown({ action: 'select' });
 
 		console.log(seatsDataStore.seatsData.length);
+		console.log(candidatesDataStore.candidatesData.length);
 		
-
 		// load seat data from csv
 		const seatsData = await readCSV('data/seat_data.csv');
 		seatsDataStore.seatsData = seatsData;
 		console.log(seatsDataStore.seatsData.length);
-	});
+
+		// load candidate data from csv
+		const candidatesData = await readCSV('data/candidates_2026.csv');
+		candidatesDataStore.candidatesData = candidatesData;
+		console.log(candidatesDataStore.candidatesData.length);
+});
 </script>
 
 <!-- ROOT LAYOUT -->
