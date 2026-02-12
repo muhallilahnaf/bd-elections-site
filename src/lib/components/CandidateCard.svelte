@@ -18,9 +18,9 @@
 </script>
 
 <div class="card">
-    <div class="image">
+    <!-- <div class="image">
         <img src={`${folder}${candidate.src}`} alt={candidateName}>
-    </div>
+    </div> -->
     <div class="content">
         <div class="header">{candidateName}</div>
         <div class="description">

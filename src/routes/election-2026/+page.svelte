@@ -18,6 +18,8 @@
 	let partyVotePc = $state([])
 
 	let seatVotesData = $state([])
+	let seatVotesPAData = $state([])
+	let seatVotesPADataLatest = $state([])
 	let partyVotesData = $state([])
 	const bigp = ['BNP', 'Jamaat', 'Islami Andolan Bangladesh', 'NCP', 'JaPa']
 	const colors = {
@@ -30,9 +32,21 @@
 
 
 	onMount(async () => {
-		seatVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes.csv')
+		// seatVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes.csv')
+		seatVotesPAData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes_pa.csv')
 		partyVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/party_votes.csv')
-		console.log(seatVotesData.length);
+		// console.log(seatVotesData.length);
+		if (seatVotesPAData.length > 0) {
+			let latest = new Date(seatVotesPAData[0].time)
+			seatVotesPAData.forEach(d => {
+				if (new Date(d.time) > latest) {
+					latest = new Date(d.time)
+				}
+			})
+			seatVotesPADataLatest = seatVotesPAData.filter(d => new Date(d.time) == latest)
+			console.log(seatVotesPAData);
+			
+		}
 		partyWins = partyVotesData.filter(
 			q => bigp.includes(q.party)
 		).toSorted(
@@ -142,21 +156,40 @@
 	)
     let selectedSeat = $state(undefined)
 
+	// get target seat candidate details
+	const getTargetSeatCandidateDetails = (targetSeat) => {
+		return candidatesDataStore.candidatesData.filter(c => c.seat === selectedSeat)
+	}
+
 	// seat candidate details
-    let targetSeatCandidates = $derived(
-		candidatesDataStore.candidatesData.filter(c => c.seat === selectedSeat)
-    )
+    let targetSeatCandidates = $derived(getTargetSeatCandidateDetails(selectedSeat))
 
 	// seat top 2 candidates votes
     let seatTopCandidates = $derived(
 		seatVotesData.filter(
-			s => s.seat === selectedSeat
+			s => s.seat_name === selectedSeat
 		).toSorted(
 			(a, b) => b.vote - a.vote
 		).slice(0, 2)
     )
 
-	let _ = $derived((seatTopCandidates) => console.log(seatTopCandidates))
+	const getPALatest = (data) => {
+		if (data.length > 0) {
+			// console.log(data);
+			let latest = new Date(data[0].time)
+			// console.log(latest);
+			
+			data.forEach(d => {
+				if (new Date(d.time) > latest) {
+					latest = new Date(d.time)
+				}
+			})
+			return data.filter(d => new Date(d.time) == latest)
+		}
+		return []
+	}
+
+	// let seatVotesPADataLatest = $derived(getPALatest(seatVotesPAData))
 
     $effect(() => {
 		divisions = getDivisions(seatsDataStore.seatsData)
@@ -182,16 +215,35 @@
 <div class="ui container">
 	<div class="ui basic segment">
 		<!-- map -->
-		 <!-- pie chart party wins -->
+		<!-- pie chart party wins -->
 		<div class="ui basic very padded segment canvas">
 			<h3>Party ahead/won</h3>
 			<canvas bind:this={canvasPartyWins}></canvas>
 		</div>
-		 <!-- pie chart party vote % -->
+		<!-- pie chart party vote % -->
 		<div class="ui basic very padded segment canvas">
 			<h3>Party vote % (out of total voters)</h3>
 			<canvas bind:this={canvasPartyVotePc}></canvas>
 		</div>
+		<!-- all seats result -->
+		<table>
+			<thead>
+				<tr>
+					<th>seat</th>
+					<th>party</th>
+					<th>vote</th>
+				</tr>
+			</thead>
+			<tbody>
+				{#each seatVotesPADataLatest as data}
+					<tr>
+						<td>{data.seat}</td>
+						<td>{data.party}</td>
+						<td>{data.vote}</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
 		<!-- dropdowns -->
 		<div class="ui basic very padded segment">
 			<select class="ui selection dropdown" bind:value={selectedDivision}>
@@ -219,8 +271,8 @@
 		</div>
         {#if selectedSeat}
 			<div class="ui basic very padded segment">
-                <h3>Top 2 candidates</h3>
-                <div class="ui four stackable cards">
+                <h3>Live update</h3>
+                <div class="ui two stackable cards">
                     {#each seatTopCandidates as candidate}
                         <CandidateVotesCard candidate={candidate} />
                     {/each}

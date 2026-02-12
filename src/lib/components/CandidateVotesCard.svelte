@@ -22,18 +22,17 @@
     }
 </script>
 
-<div class="card">
+<div class="ui horizontal card">
     <div class="image">
         <img src={`${folder}${src}`} alt={candidate.party}>
     </div>
     <div class="content">
         <div class="header">{candidate.name}</div>
-        <div class="description">
-            <p>{candidate.party}</p>
+        <div class="meta">
+            <span class="category">{candidate.party}</span>
         </div>
-    </div>
-    <div class="extra content">
-        <span class="right floated">{candidate.vote_pc}</span>
-        <span>Votes: {candidate.vote}</span>
+        <div class="description">
+            <p>Votes: {candidate.vote} ({candidate.vote_pc}%)</p>
+        </div>
     </div>
 </div>
