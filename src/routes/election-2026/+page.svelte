@@ -20,39 +20,53 @@
 	let seatVotesData = $state([])
 	let partyVotesData = $state([])
 	const bigp = ['BNP', 'Jamaat', 'Islami Andolan Bangladesh', 'NCP', 'JaPa']
+	const colors = {
+		'BNP': '#F2C744', 
+		'Jamaat': '#004c55', 
+		'Islami Andolan Bangladesh': '#671933', 
+		'NCP': '#004c55', 
+		'JaPa': '#ed1b24'
+	}
 
 
 	onMount(async () => {
-		// seatVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes.csv')
-		// partyVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/party_votes.csv')
+		seatVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes.csv')
+		partyVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/party_votes.csv')
 		console.log(seatVotesData.length);
 		partyWins = partyVotesData.filter(
 			q => bigp.includes(q.party)
 		).toSorted(
 			(a, b) => b.count - a.count
-		)
+		)		
 		if (canvasPartyWins) {
 			chartPartyWins = new Chart(canvasPartyWins, {
-				type: 'pie',
+				type: 'bar',
 				data: {
-					labels: partyWins.map(p => p.party),
-					datasets: [{
-						label: '# of seats',
-						data: partyWins.map(p => p.count),
-					}]
+					labels: [''],
+					datasets: partyWins.map(p => ({
+						label: p.party,
+						data: [p.count],
+						backgroundColor: colors[p.party]
+					}))
 				},
 				options: {
+					indexAxis: 'y',
 					responsive: true,
-					plugins: {
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: 'Party ahead/wins'
+					scales: {
+						x: {
+							stacked: true,
+							grid: {
+                				display: false
+            				}
+						},
+						y: {
+							stacked: true,
+							grid: {
+                				display: false
+            				}
+						}
 					}
-					}
-				},
+				}
 			})
 		}
 		partyVotePc = partyVotesData.filter(
@@ -68,18 +82,17 @@
 					datasets: [{
 						label: 'Vote %',
 						data: partyVotePc.map(p => p.vote_pc),
+						backgroundColor: partyVotePc.map(p => colors[p.party])
 					}]
 				},
 				options: {
 					responsive: true,
 					plugins: {
-					legend: {
-						position: 'top',
-					},
-					title: {
-						display: true,
-						text: 'Party vote %'
-					}
+						legend: {
+							display: true,
+							position: 'bottom',
+							align: 'center'
+						},
 					}
 				},
 			})
@@ -139,22 +152,14 @@
 		seatVotesData.filter(
 			s => s.seat === selectedSeat
 		).toSorted(
-			(a, b) => b.votes - a.votes
+			(a, b) => b.vote - a.vote
 		).slice(0, 2)
     )
 
+	let _ = $derived((seatTopCandidates) => console.log(seatTopCandidates))
+
     $effect(() => {
 		divisions = getDivisions(seatsDataStore.seatsData)
-		// if (!chart) return
-		// chart.data = {
-		// 	labels: ['jan', 'feb', 'mar'],
-		// 	datasets: $state.snapshot([{
-		// 		label: dataLabel,
-		// 		data: ChartData,
-		// 		backgroundColor: 'f24b13'
-		// 	}])
-		// }
-		// chart.update()
 	})
 
 
@@ -179,14 +184,16 @@
 		<!-- map -->
 		 <!-- pie chart party wins -->
 		<div class="ui basic very padded segment canvas">
+			<h3>Party ahead/won</h3>
 			<canvas bind:this={canvasPartyWins}></canvas>
 		</div>
 		 <!-- pie chart party vote % -->
 		<div class="ui basic very padded segment canvas">
+			<h3>Party vote % (out of total voters)</h3>
 			<canvas bind:this={canvasPartyVotePc}></canvas>
 		</div>
 		<!-- dropdowns -->
-		<div class="ui basic segment">
+		<div class="ui basic very padded segment">
 			<select class="ui selection dropdown" bind:value={selectedDivision}>
 				<option value={undefined} disabled selected>Select a division</option>
 				{#each divisions as division}
@@ -211,7 +218,15 @@
 			{/if}
 		</div>
         {#if selectedSeat}
-            <div class="ui basic very padded segment">
+			<div class="ui basic very padded segment">
+                <h3>Top 2 candidates</h3>
+                <div class="ui four stackable cards">
+                    {#each seatTopCandidates as candidate}
+                        <CandidateVotesCard candidate={candidate} />
+                    {/each}
+                </div>
+            </div>
+			<div class="ui basic very padded segment">
                 <h3>Candidates</h3>
                 <div class="ui four stackable cards">
                     {#each targetSeatCandidates as candidate}
@@ -219,22 +234,14 @@
                     {/each}
                 </div>
             </div>
-			<!-- <div class="ui basic very padded segment">
-                <h3>Top 2 candidates</h3>
-                <div class="ui four stackable cards">
-                    {#each seatTopCandidates as candidate}
-                        <CandidateVotesCard candidate={candidate} />
-                    {/each}
-                </div>
-            </div> -->
         {/if}
     </div>
 </div>
 
 <style>
 	.canvas {
-		/* width: 100% !important;
-		height: 100% !important; */
-		display: none;
+		/* width: 100% !important; */
+		height: 80vh !important;
+		/* display: none; */
 	}
 </style>
