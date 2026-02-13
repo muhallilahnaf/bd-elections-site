@@ -10,9 +10,13 @@
 	import { readCSV } from '$lib/helper';
 	import CandidateVotesCard from '$lib/components/CandidateVotesCard.svelte';
 
+	let canvasAllianceWins = $state(null)
+	let chartAllianceWins = null
+	let allianceWins = $state([])
+
 	let canvasPartyWins = $state(null)
 	let chartPartyWins = null
-	let partyWins = $state({})
+	let partyWins = $state([])
 
 	let canvasPartyVotePc = $state(null)
 	let chartPartyVotePc = null
@@ -21,10 +25,6 @@
 	let canvasPartyAvgVotePc = $state(null)
 	let chartPartyAvgVotePc = null
 	let partyAvgVotePc = $state([])
-
-	let canvasSeatAvgVotePc = $state(null)
-	let chartSeatAvgVotePc = null
-	let seatAvgVotePc = $state([])
 
 	let seatVotesData = $state([])
 	let partyVotesData = $state([])
@@ -36,6 +36,11 @@
 		'NCP': '#004c55', 
 		'Independent': '#ed1b24',
 	}
+	const allianceColors = {
+		'BNP': '#F2C744', 
+		'Jamaat-NCP': '#009036', 
+		'no alliance': '#ed1b24',
+	}
 
 
 	onMount(async () => {
@@ -45,7 +50,45 @@
 		seatVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/seat_votes_pa.csv')
 		partyVotesData = await readCSV('https://raw.githubusercontent.com/muhallilahnaf/election-2026-live/master/data/party_votes_pa.csv')
 		// console.log(seatVotesData.length);
-		
+
+		// alliance win count
+		let allianceWinData = {}
+		partyVotesData.filter(p => p.count > 0).forEach(p => {
+			let count = parseFloat(p.count)
+			count = Number.isNaN(count) ? 0 : count
+			if (p.alliance in allianceWinData) {
+				allianceWinData[p.alliance] = allianceWinData[p.alliance] + count
+			} else {
+				allianceWinData[p.alliance] = count
+			}
+		})
+		allianceWins = Object.entries(allianceWinData).sort(([, a], [, b]) => b-a);
+		if (canvasAllianceWins) {
+			chartAllianceWins = new Chart(canvasAllianceWins, {
+				type: 'doughnut',
+				data: {
+					labels: allianceWins.map(p => p[0]),
+					datasets: [{
+						label: '',
+						data: allianceWins.map(p => p[1]),
+						backgroundColor: allianceWins.map(p => allianceColors[p[0]]),
+						datalabels: {
+							color: '#333333',
+							font: {
+								weight: 'bold'
+							}
+      					}
+					}]
+				},
+				options: {
+					responsive: true,					
+					cutout: '70%',
+					rotation: -90,
+					circumference: 180
+				}
+			})
+		}
+
 		// party win count
 		partyWins = partyVotesData.filter(p => p.count > 0).toSorted((a, b) => b.count - a.count)		
 		if (canvasPartyWins) {
@@ -69,12 +112,11 @@
 					}]
 				},
 				options: {
-					indexAxis: 'y',
 					responsive: true,
 					scales: {
 						x: {
 							grid: {
-                				display: true
+                				display: false
             				}
 						},
 						y: {
@@ -170,40 +212,6 @@
 				}
 			})
 		}
-
-		// seat average vote pc
-		let seatAvgVotePcData = {}
-		seatVotesData.forEach(s => {
-			let vote_pc = parseFloat(s.vote_pc)
-			vote_pc = Number.isNaN(vote_pc) ? 0 : vote_pc
-			if (s.seat in seatAvgVotePcData) {
-				seatAvgVotePcData[s.seat].push(vote_pc)
-			} else {
-				seatAvgVotePcData[s.seat] = [vote_pc]
-			}
-		})		
-		seatAvgVotePc = Object.values(seatAvgVotePcData).map(s => s.reduce((acc, current) => acc+current, 0) / s.length)
-		seatAvgVotePc = seatAvgVotePc.toSorted((a, b) => b-a)
-		if (canvasSeatAvgVotePc) {
-			chartSeatAvgVotePc = new Chart(canvasSeatAvgVotePc, {
-				type: 'line',
-				data: {
-					labels: seatAvgVotePc.map(s => ''),
-					datasets: [{
-						label: 'Avg Vote %',
-						data: Object.values(seatAvgVotePc),
-					}],
-				},
-				options: {
-					responsive: true,
-					plugins: {
-						datalabels: {
-        					display: false,
-						}
-					}
-				}
-			})
-		}
 	})
 
 
@@ -290,7 +298,12 @@
 <div class="ui container">
 	<div class="ui basic segment">
 		<!-- map -->
-		<!-- pie chart party wins -->
+		<!-- pie chart alliance wins -->
+		<div class="ui basic very padded segment canvas">
+			<h3>Alliance wins</h3>
+			<canvas bind:this={canvasAllianceWins}></canvas>
+		</div>
+		<!-- bar chart party wins -->
 		<div class="ui basic very padded segment canvas">
 			<h3>Party ahead/won</h3>
 			<canvas bind:this={canvasPartyWins}></canvas>
@@ -304,11 +317,6 @@
 		<div class="ui basic very padded segment canvas">
 			<h3>Party avg vote % (in their contested seats)</h3>
 			<canvas bind:this={canvasPartyAvgVotePc}></canvas>
-		</div>
-		<!-- line chart seat avg vote % -->
-		<div class="ui basic very padded segment canvas">
-			<h3>Seat avg vote % (avg among top 2 candidates)</h3>
-			<canvas bind:this={canvasSeatAvgVotePc}></canvas>
 		</div>
 		<!-- dropdowns -->
 		<div class="ui basic very padded segment">
@@ -362,5 +370,9 @@
 		/* width: 100% !important; */
 		height: 80vh !important;
 		/* display: none; */
+	}
+	.very.padded.segment.canvas {
+		padding-left: 0;
+		padding-right: 0;
 	}
 </style>
