@@ -28,6 +28,7 @@
 	},
 	"dependencies": {
 		"chart.js": "^4.5.1",
+		"chartjs-plugin-datalabels": "^2.2.0",
 		"csv-string": "^4.1.1",
 		"datatables.net-dt": "^2.1.8",
 		"fuzzball": "^2.1.3",
