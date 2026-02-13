@@ -297,7 +297,13 @@
 
 <div class="ui container">
 	<div class="ui basic segment">
-		<!-- map -->
+		<!-- analysis page -->
+		<a href="/election-2026/analysis">
+			<button class="tiny ui compact labeled icon button">
+				<i class="arrow right icon"></i>
+				Election 2026 primary analysis
+			</button>
+		</a>
 		<!-- pie chart alliance wins -->
 		<div class="ui basic very padded segment canvas">
 			<h3>Alliance wins</h3>

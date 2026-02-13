@@ -8,16 +8,20 @@
 		<div class="ui compact basic segment">
 			<img src={`${folder}${section.file_name}`} alt={section.file_name} class="ui image" />
 		</div>
-		<p class="description">
-			{section.description}
-		</p>
-		<div class="ui icon info message">
-			<i class="info icon"></i>
-			<div class="content">
-				<div class="header">Insight</div>
-				<p>{section.discussion}</p>
+		{#if section.description !== ''}			
+			<p class="description">
+				{section.description}
+			</p>
+		{/if}
+		{#if section.discussion !== ''}			
+			<div class="ui icon info message">
+				<i class="info icon"></i>
+				<div class="content">
+					<div class="header">Insight</div>
+					<p>{section.discussion}</p>
+				</div>
 			</div>
-		</div>
+		{/if}
 	</div>
 </div>
 
