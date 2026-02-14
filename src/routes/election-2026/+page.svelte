@@ -9,6 +9,7 @@
     import CandidateCard from '$lib/components/CandidateCard.svelte';
 	import { readCSV } from '$lib/helper';
 	import CandidateVotesCard from '$lib/components/CandidateVotesCard.svelte';
+	import PartyCard from '$lib/components/PartyCard.svelte';
 
 	let canvasAllianceWins = $state(null)
 	let chartAllianceWins = null
@@ -29,6 +30,8 @@
 	let seatVotesData = $state([])
 	let partyVotesData = $state([])
 	// const bigp = ['BNP', 'Jamaat', 'Islami Andolan Bangladesh', 'NCP', 'JaPa']
+	const partySummaryParties = ['BNP', 'Jamaat', 'NCP']
+
 	const colors = {
 		'BNP': '#F2C744', 
 		'Jamaat': '#009036', 
@@ -308,6 +311,15 @@
 		<div class="ui basic very padded segment canvas">
 			<h3>Alliance wins</h3>
 			<canvas bind:this={canvasAllianceWins}></canvas>
+		</div>
+		<!-- party summary stats -->
+		<div class="ui basic very padded segment">
+			<h3>Party Summary</h3>
+			{#each partyVotesData as party}
+				{#if partySummaryParties.includes(party.party)}
+					<PartyCard {party} />
+				{/if}
+			{/each}
 		</div>
 		<!-- bar chart party wins -->
 		<div class="ui basic very padded segment canvas">

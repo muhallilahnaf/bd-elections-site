@@ -13,7 +13,17 @@
                     discussion: ''
                 },
                 {
+                    file_name: 'election_2026_dhaka_vote_difference.png',
+                    description: '',
+                    discussion: ''
+                },
+                {
                     file_name: 'election_2026_party_win_map_dhaka.png',
+                    description: '',
+                    discussion: ''
+                },
+                {
+                    file_name: 'election_2026_ctg_vote_difference.png',
                     description: '',
                     discussion: ''
                 },
@@ -24,6 +34,11 @@
                 },
                 {
                     file_name: 'election_2026_turnout_party_distn.png',
+                    description: '',
+                    discussion: ''
+                },
+                {
+                    file_name: 'election_2026_bigp_votepc_turnout.png',
                     description: '',
                     discussion: ''
                 },
@@ -63,6 +78,11 @@
                     discussion: ''
                 },
                 {
+                    file_name: 'election_2026_alliance_big_win.png',
+                    description: '',
+                    discussion: ''
+                },
+                {
                     file_name: 'election_2026_alliance_jamaat_ncp_win_vote_gap_distn.png',
                     description: '',
                     discussion: ''
@@ -79,6 +99,11 @@
                 },
                 {
                     file_name: 'election_2026_alliance_bnp_win_vote_gap.png',
+                    description: '',
+                    discussion: ''
+                },
+                {
+                    file_name: 'election_2026_ncp_candidates.png',
                     description: '',
                     discussion: ''
                 }
